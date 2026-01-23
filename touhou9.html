@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phantasmagoria of Flower View</title>
+    <link rel="stylesheet" href="css/touhou9.css">
+    <link rel="shortcut icon" href="img/img.cenario/favicon.ico" type="image/x-icon">
+</head>
+<body>
+         <div class="page">
+
+  <div class="texto">
+   
+    
+<h1>Touhou 9 – Phantasmagoria of Flower View</h1>
+
+<p><b>Título:</b> Touhou Kaeidzuka ~ Phantasmagoria of Flower View</p>
+
+<p>
+<b>Desenvolvedora:</b> Team Shanghai Alice<br>
+<b>Criador:</b> ZUN
+</p>
+
+<p><b>Data de lançamento:</b> 14 de agosto de 2005</p>
+
+<p><b>Plataforma:</b> PC (Windows)</p>
+
+<p><b>Gênero:</b> Shoot 'em up (danmaku / bullet hell)</p>
+
+<p>
+<b>Descrição:</b>
+Touhou 9 apresenta o florescimento simultâneo das flores por toda Gensokyo.
+O fenômeno está ligado ao excesso de espíritos vagando pelo mundo.
+Diversos personagens investigam o incidente,
+que envolve a juíza do submundo e o equilíbrio entre vida e morte.
+</p>
+
+    <h1>História</h1>
+
+    Em Gensokyo, algo estranho acontece:
+flores começam a florescer fora de época, cobrindo campos, rios e montanhas ao mesmo tempo.
+Esse fenômeno anormal indica que algo está errado com o equilíbrio entre o mundo dos vivos e o dos mortos. <p></p>
+
+Várias personagens percebem o problema e decidem investigar. <p></p>
+
+Durante a investigação, elas acabam se enfrentando em duelos, pois cada uma acredita que a outra pode ser a causa do incidente. <p></p>
+
+Mais tarde, descobre-se que o fenômeno está ligado ao excesso de espíritos (fantasmas) vagando por Gensokyo. <p></p>
+Esses espíritos provocam o florescimento massivo, pois a energia da morte está vazando para o mundo dos vivos. <p></p>
+
+A responsável indireta por isso é Yuuka Kazami, uma youkai extremamente poderosa que ama flores.
+Ela não causou o incidente por maldade, mas aproveitou o desequilíbrio natural para observar o caos e se divertir. <p></p>
+
+    
+    
+<h1>Personagens Jogáveis</h1>
+<a href="Reimu.html">Reimu Hakurei </a>  (sacerdotisa do Santuário Hakurei) <p></p>
+
+<a href="Marisa.html">Marisa Kirisame</a> (maga humana) <p></p>
+
+<a href="Sakuya.html">Sakuya Izayoi </a> (empregada da Mansão Scarlet Devil) <p></p>
+
+<a href="Youmu.html">Youmu Konpaku</a>  (espadachim meio-fantasma) <p></p>
+
+<a href="Reisen.html">Reisen Udongein Inaba</a>  (coelha da Lua) <p></p>
+
+<a href="cirno.html">Cirno</a>  (fada do gelo) <p></p>
+
+<a href="Lyrica.html">Lyrica Prismriver</a> (espírito musical) <p></p>
+
+<a href="Mystia.html">Mystia Lorelei </a>  (youkai pardal-noturno) <p></p>
+
+<a href="Tewi.html">Tewi Inaba</a> (coelha da sorte) <p></p>
+
+<a href="Aya.html">Aya Shameimaru</a> (tengu jornalista) <p></p>
+
+<h2>Personagens Jogáveis Extras (desbloqueáveis)</h2> <p></p>
+
+<a href="Medicine.html">Medicine Melancholy</a> ( Boneca Envenenada) <p></p>
+
+<a href="Yuuka.html">Yuuka Kazami</a> ( Youkai das Flores) <p></p>
+
+<a href="Komachi.html">Komachi Onozuka</a> ( Shinigami Preguiçosa) <p></p>
+
+<a href="Eiki.html">Eiki Shiki, Yamaxanadu</a> (Juíza Suprema do Paraíso) <p></p>
+
+Cada uma pode ser jogada por vez, mas a história principal muda pouco entre elas.
+</div>
+
+<div class="descricao">
+
+    <div class="nome">
+      <h1>boss touhou 9 </h1>
+    </div>
+
+    <div class="versao">
+   <button class="ativar" data-img="img/img.boss_th9/Medicine.png">Medicine</button>
+   <button data-img="img/img.boss_th9/Yuuka.png">Yuuka</button>
+    <button data-img="img/img.boss_th9/Komachi.png">Komachi</button>
+   <button data-img="img/img.boss_th9/Enki.png">Enki</button>
+    </div>
+
+   <div class="content" id="boss-img">
+      <img src="img/img.boss_th9/Medicine.png" alt="Medicine">
+    </div>
+
+    <script>
+  const buttons = document.querySelectorAll('.versao button');
+
+  const imageDisplay = document.querySelector('#boss-img img');
+
+  buttons.forEach(button => {
+    button.addEventListener('click', () => {
+    
+      const newImgPath = button.getAttribute('data-img');
+      
+ 
+      imageDisplay.src = newImgPath;
+
+     
+      buttons.forEach(b => b.classList.remove('ativar'));
+      button.classList.add('ativar');
+    });
+  });
+  </script>
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phantasmagoria of Flower View</title>
+    <link rel="stylesheet" href="css/touhou10.css">
+    <link rel="shortcut icon" href="img/img.cenario/favicon.ico" type="image/x-icon">
+</head>
+<body>
+         <div class="page">
+
+  <div class="texto">
+    
+    <h1>Touhou 10 – Mountain of Faith</h1>
+
+<p>
+<b>Título:</b> Touhou Fuujinroku ~ Mountain of Faith
+</p>
+
+<p>
+<b>Desenvolvedora:</b> Team Shanghai Alice
+<br>
+<b>Criador:</b> ZUN
+</p>
+
+<p>
+<b>Data de lançamento:</b> 17 de agosto de 2007
+</p>
+
+<p>
+<b>Plataforma:</b> PC (Windows)
+</p>
+
+<p>
+<b>Gênero:</b> Shoot 'em up (danmaku / bullet hell)
+</p>
+
+<p>
+<b>Descrição:</b>
+Touhou 10 é o décimo jogo oficial da série Touhou Project.
+A história gira em torno de um estranho fenômeno climático em Gensokyo,
+ligado à fé e à chegada do Santuário Moriya.
+O jogo introduz personagens importantes e um novo sistema baseado em fé.
+</p>
+
+  
+
+    <h1>História</h1>
+Em Gensokyo, um fenômeno estranho começa a ocorrer:
+uma chuva constante e fora do comum cai sobre a terra, algo que nunca havia acontecido antes.
+Esse evento anormal chama a atenção dos humanos e youkai.
+</p>
+
+<p>
+Reimu Hakurei e Marisa Kirisame percebem que a fé das pessoas de Gensokyo está sendo roubada,
+o que ameaça diretamente o Santuário Hakurei e o equilíbrio da região.
+</p>
+
+<p>
+Decididas a investigar, elas seguem até a Montanha Youkai,
+onde enfrentam diversas guardiãs da montanha que tentam impedi-las de avançar.
+</p>
+
+<p>
+Durante a subida, descobrem que um novo santuário foi trazido para Gensokyo:
+o Santuário Moriya, vindo do mundo exterior.
+</p>
+
+<p>
+As responsáveis são as deusas <a href="Kanako.html">Kanako Yasaka</a> e <a href="Suwako.png">Suwako Moriya</a>,
+que precisam de fé para sobreviver e decidiram competir com o Santuário Hakurei.
+</p>
+
+<p>
+Após o confronto final, chega-se a um acordo.
+O Santuário Moriya permanece em Gensokyo,
+e a fé passa a ser disputada de forma aberta entre os dois santuários.
+</p>
+
+<p>
+Assim, o incidente termina sem destruição,
+marcando o início de uma nova era de rivalidade religiosa em Gensokyo.
+</p>
+
+
+    
+    
+<h1>Personagens Jogáveis</h1>
+
+<a href="Reimu.html">Reimu Hakurei </a>  (sacerdotisa do Santuário Hakurei) <p></p>
+
+<a href="Marisa.html">Marisa Kirisame</a> (maga humana) <p></p>
+
+Cada uma pode ser jogada por vez, mas a história principal muda pouco entre elas.
+</div>
+
+<div class="descricao">
+
+    <div class="nome">
+      <h1>boss touhou 10 </h1>
+    </div>
+
+    <div class="versao">
+   <button class="ativar" data-img="img/img.boss_th10/Shizuha.png">Shizuha</button>
+   <button data-img="img/img.boss_th10/Minoriko.png">Minoriko</button>
+   <button data-img="img/img.boss_th10/Hina.png">Hina</button>
+   <button data-img="img/img.boss_th10/Nitori.png">Nitori</button>
+   <button data-img="img/img.boss_th10/Aya.png">Aya</button>
+   <button data-img="img/img.boss_th10/Sanae.png">Sanae</button>
+   <button data-img="img/img.boss_th10/Kanako.png">Kanako</button>
+   <button data-img="img/img.boss_th10/Suwako.png">Suwako</button>
+    </div>
+
+   <div class="content" id="boss-img">
+      <img src="img/img.boss_th10/Shizuha.png" alt="">
+    </div>
+
+    <script>
+  const buttons = document.querySelectorAll('.versao button');
+
+  const imageDisplay = document.querySelector('#boss-img img');
+
+  buttons.forEach(button => {
+    button.addEventListener('click', () => {
+    
+      const newImgPath = button.getAttribute('data-img');
+      
+ 
+      imageDisplay.src = newImgPath;
+
+     
+      buttons.forEach(b => b.classList.remove('ativar'));
+      button.classList.add('ativar');
+    });
+  });
+  </script>
+</body>
+</html>
