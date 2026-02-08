@@ -2,9 +2,10 @@
 
 ### 📄 Pagina Principal
 <div align="certer">
- A pagina inicial contem banner que eu fiz com 3 fumo (Reimu,Cirno,Marisa) em baixo dela esta nome.
-
-  <img width="1908" height="987" alt="Captura de tela 2026-02-08 195718" src="https://github.com/user-attachments/assets/c42deeca-bda6-40c1-ab89-cdd92bef91ba" />
+ A pagina inicial contem banner que eu fiz com 3 fumo (Reimu,Cirno,Marisa) em baixo dela esta nome do site e a um video de fundo.
+ 
+ <img width="2000" height="2000" alt="Design_sem_nome-removebg-preview" src="https://github.com/user-attachments/assets/619ce8b4-d630-452c-b84b-4e238348f1ed" />
 
 
 </div>
+
