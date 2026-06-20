@@ -1,0 +1,108 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url(../img/img.boss_th11/background.png);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-color: #140b1f; /* roxo escuro subterrâneo */
+  color: #ffeefc;
+  margin: 0;
+}
+
+.page {
+  display: flex;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 0 20px;
+  align-items: flex-start; 
+}
+
+/* TEXTO PRINCIPAL */
+.texto {
+  flex: 2;
+  line-height: 1.6;
+  text-align: left;
+  background: rgba(60, 20, 70, 0.65); /* roxo translúcido */
+  padding: 20px;
+  border-radius: 12px;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 0 20px rgba(255, 80, 120, 0.2);
+}
+
+/* CARD LATERAL */
+.descricao {
+  flex: 1;
+  width: 360px;
+  background: linear-gradient(180deg, #5a1f5c, #2a0f35);
+  border-radius: 12px;
+  overflow: hidden;
+  position: sticky;
+  top: 20px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.6);
+}
+
+/* NOME */
+.nome {
+  background: linear-gradient(90deg, #ff4d6d, #9d4edd);
+  text-align: center;
+  padding: 12px;
+}
+
+.nome h1 {
+  font-size: 18px;
+  margin: 0;
+  color: #ffffff;
+  letter-spacing: 1px;
+}
+
+/* BOTÕES */
+.versao {
+  display: flex;
+   flex-wrap: wrap;
+}
+
+.versao button {
+  flex: 1;
+  padding: 8px;
+  background: #2a0f35;
+  border: none;
+  color: #f8dfff;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.versao button:hover {
+  background: #9d4edd;
+}
+
+.versao button.ativar {
+  color: #ffffff;
+  border-bottom: 2px solid #ff4d6d;
+}
+
+/* CONTEÚDO */
+.content {
+  background: rgba(70, 20, 80, 0.9);
+  padding: 15px;
+  text-align: center;
+}
+
+.content img {
+  width: 100%;
+  display: block;
+  border-radius: 6px;
+  box-shadow: 0 0 15px rgba(255, 77, 109, 0.4);
+}
+
+/* RESPONSIVO */
+@media (max-width: 900px) {
+  .page {
+    flex-direction: column;
+  }
+
+  .descricao {
+    position: static;
+    width: 100%;
+  }
+}

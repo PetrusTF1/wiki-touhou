@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reimu</title>
+  <link rel="stylesheet" href="../css/Reimu.css">
+  <link rel="shortcut icon" href="../img/img.cenario/favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+<div class="page">
+
+
+  <div class="texto">
+    <!--INFORMAÇÃO DO PERSONAGEM-->
+  <h2>PERSONALIDADE</h2>
+
+<p><b>Reimu é frequentemente vista como:</b></p>
+
+Séria e direta – ela fala de forma simples e objetiva, sem rodeios.<br><br>
+
+Despreocupada – apesar de suas responsabilidades, muitas vezes age de forma relaxada e preguiçosa.<br><br>
+
+Sarcástica – tem um humor seco e frequentemente responde com ironia.<br><br>
+
+Ela transmite a sensação de alguém prática, independente e com forte senso de dever.
+
+<p><b>🧠 Inteligência e percepção</b></p>
+
+<p>
+Apesar de parecer despreocupada, Reimu é extremamente perceptiva:<br>
+Detecta youkais e anomalias rapidamente<br>
+Possui forte intuição espiritual<br>
+Toma decisões rápidas em combate<br><br>
+
+Ela resolve incidentes com eficiência natural.
+</p>
+
+<p><b>🧹 Comportamento cotidiano</b></p>
+
+<p>
+Reimu tem um estilo de vida simples:<br><br>
+
+Gosta de descansar no santuário<br>
+Frequentemente reclama da falta de doações<br>
+Prefere evitar esforço desnecessário<br><br>
+
+Mesmo assim, cumpre seu papel quando necessário.
+</p>
+
+<p><b>⛩ Natureza equilibrada</b></p>
+
+<p>
+Reimu mantém o equilíbrio entre humanos e youkais:<br><br>
+
+Não odeia youkais, mas os exorciza quando causam problemas<br>
+Valoriza a ordem em Gensokyo<br>
+Age como guardiã da fronteira espiritual<br><br>
+
+Sua postura mistura responsabilidade, neutralidade e pragmatismo.
+</p>
+
+<p><b>🤝 Relação com os outros</b></p>
+
+<p>
+Ela interage com todos de forma direta:<br><br>
+
+É rival amigável de Marisa Kirisame<br>
+Tem ligação próxima com Yukari Yakumo<br>
+Lida frequentemente com youkais e espíritos<br><br>
+
+Apesar de sua franqueza, é uma figura respeitada em Gensokyo.
+</p>
+
+
+<h2>OCUPAÇÃO</h2>
+
+<p><b>Sacerdotisa do Santuário Hakurei</b></p>
+
+<p>
+Reimu é a sacerdotisa responsável pelo Santuário Hakurei, que mantém a barreira que separa Gensokyo do mundo exterior.
+Ela realiza rituais, resolve incidentes e protege o equilíbrio espiritual.
+</p>
+
+<p><b>Resolvedora de incidentes</b></p>
+
+<p>
+Sempre que algo estranho acontece em Gensokyo, Reimu é a principal responsável por investigar e resolver o problema.
+</p>
+
+
+<h2>HABILIDADES</h2>
+
+<p><b>Poder espiritual</b></p>
+
+<p>
+Reimu possui poder espiritual extremamente alto:
+</p>
+
+<p>
+Purificação de youkais<br>
+Criação de barreiras espirituais<br>
+Ataques com ofuda e agulhas<br>
+Resistência a magia e energia espiritual
+</p>
+
+<p>
+Seu poder é especialmente eficaz contra entidades sobrenaturais.
+</p>
+
+<p><b>Intuição sobrenatural</b></p>
+
+<p>
+Reimu possui um "sexto sentido" que a guia naturalmente para resolver problemas e evitar perigos.
+</p>
+
+<p><b>Voo e combate ágil</b></p>
+
+<p>
+Ela voa livremente pelo céu e utiliza movimentos ágeis combinados com ataques espirituais, sendo uma combatente extremamente eficiente.
+</p>
+
+<p>
+Ela age como a principal defensora do equilíbrio em Gensokyo.
+</p>
+    <h2>SPEALL CARDS</h2>
+    <video controls height="200px" src="../video.Spell/Reimuspeal1.mp4"></video>  
+    <video controls height="200px" src="../video.Spell/Reimuspeal2.mp4"></video>
+    <video controls height="200px" src="../video.Spell/Reimuspeal3.mp4"></video>
+    <video controls height="200px" src="../video.Spell/Reimuspeal4.mp4"></video>
+  </div>
+  
+  <div class="descricao">
+
+    <div class="nome">
+      <h1>Reimu Hakurei</h1>
+    </div>
+
+    <div class="versao">
+  <button class="ativar" data-img="../img/img.personagem/img.reimu/Reimuth6.png">th6</button>
+  <button data-img="../img/img.personagem/img.reimu/Reimuth7.png">th7</button>
+  <button data-img="../img/img.personagem/img.reimu/Reimuth7,5.png">th7.5</button>
+  <button data-img="../img/img.personagem/img.reimu/Reimuth8.png">th8</button>
+  <button data-img="../img/img.personagem/img.reimu/Reimuth9.png">th9</button>
+  <button data-img="../img/img.personagem/img.reimu/Reimuth15,5.png">th15,5</button>
+  </div>
+
+    <div class="content" id="reimu-img">
+      <img src="../img/img.personagem/img.reimu/Reimuth6.png" alt="Reimu Hakurei">
+    </div>
+
+    <div class="informacao">
+      <p>Espécie: Humana</p>
+      <p>Título: Hakurei Shrine Maiden</p>
+    </div>
+  </div>
+  <!--BUTÃO PARA MUDAR A IMAGEM-->
+<script>
+  const buttons = document.querySelectorAll('.versao button');
+
+  const imageDisplay = document.querySelector('#reimu-img img');
+
+  buttons.forEach(button => {
+    button.addEventListener('click', () => {
+    
+      const newImgPath = button.getAttribute('data-img');
+      
+ 
+      imageDisplay.src = newImgPath;
+
+     
+      buttons.forEach(b => b.classList.remove('ativar'));
+      button.classList.add('ativar');
+    });
+  });
+</script>
+</div>
+</body>
+</html>

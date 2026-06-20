@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unfinished Dream of All Living Ghost</title>
+    <link rel="stylesheet" href="../css/touhou19.css">
+    <link rel="shortcut icon" href="../img/img.cenario/favicon.ico" type="image/x-icon">
+</head>
+<body>
+   <div class="page">
+  <div class="texto">
+
+   <h1>Touhou 19  Unfinished Dream of All Living Ghost</h1>
+
+    <p><b>Título:</b> Touhou Juouen ~ Unfinished Dream of All Living Ghost</p>
+
+    <p>
+      <b>Desenvolvedora:</b> Team Shanghai Alice<br>
+      <b>Criador:</b> ZUN
+    </p>
+
+    <p><b>Data de lançamento:</b> 13 de agosto de 2023</p>
+
+    <p><b>Plataforma:</b> PC (Windows)</p>
+
+    <p><b>Gênero:</b> Shoot 'em up (danmaku / bullet hell / versus)</p>
+
+    <p>
+      <b>Descrição:</b><br>
+      Touhou 19 é o décimo nono jogo principal da série Touhou.<br>
+      O jogo segue o estilo de batalhas competitivas semelhante a
+      Touhou 9, onde dois personagens lutam simultaneamente
+      enviando ataques um contra o outro.<br>
+      A história envolve espíritos misteriosos que começam a
+      aparecer em grande número por Gensokyo.
+    </p>
+
+    <h1>História</h1>
+
+    <p>
+      Um grande número de espíritos começa a surgir por toda
+      Gensokyo, criando confusão entre humanos e youkais.
+      O fenômeno parece estar ligado ao mundo dos mortos
+      e a entidades espirituais desconhecidas.
+    </p>
+
+    <p>
+      Diversos personagens decidem investigar o incidente,
+      enfrentando uns aos outros enquanto tentam descobrir
+      a origem do problema.
+    </p>
+
+    <p>
+      Durante os acontecimentos, surge a presença de
+      entidades ligadas ao reino espiritual e às leis
+      da vida e da morte.
+    </p>
+
+    <p>
+      O incidente acaba revelando conflitos e disputas
+      entre diferentes forças que controlam os espíritos,
+      levando a várias batalhas intensas entre os
+      habitantes de Gensokyo.
+    </p>
+
+    <p>
+      O jogo mantém o estilo competitivo de danmaku,
+      onde derrotar inimigos envia ataques extras
+      para o oponente, criando partidas rápidas
+      e estratégicas.
+    </p>
+
+    <h1>Personagens Jogáveis</h1>
+
+    <p>
+      <a href="Reimu.html">Reimu Hakurei</a> (sacerdotisa do Santuário Hakurei)
+    </p>
+
+    <p>
+      <a href="Marisa.html">Marisa Kirisame</a> (maga humana)
+    </p>
+
+    <p>
+      <a href="Sanae.html">Sanae Kochiya</a> (sacerdotisa do Santuário Moriya)
+    </p>
+
+    <p>
+      <a href="Youmu.html">Youmu Konpaku</a> (jardineira do Submundo)
+    </p>
+
+    <p>
+      <a href="Cirno.html">Cirno</a> (fada do gelo)
+    </p>
+
+    <p>
+      O jogo apresenta vários personagens jogáveis,
+      cada um com padrões de ataque únicos e habilidades
+      diferentes durante as batalhas competitivas.
+    </p>
+</div>
+
+   <div class="descricao">
+
+    <div class="nome">
+      <h1>boss touhou 19</h1>
+    </div>
+
+    <div class="versao">
+   <button class="ativar" data-img="../img/img.boss_th19/Reimu.png">Reimu</button>
+   <button data-img="../img/img.boss_th19/Marisa.png">Marisa</button>
+   <button data-img="../img/img.boss_th19/Sanae.png">Sanae</button>
+   <button data-img="../img/img.boss_th19/Ran.png">Ran</button>
+   <button data-img="../img/img.boss_th19/Aunn.png">Aunn</button>
+   <button data-img="../img/img.boss_th19/Nazrin.png">Nazrin</button>
+   <button data-img="../img/img.boss_th19/Seiran.png">Seiran</button>
+   <button data-img="../img/img.boss_th19/Rin.png">Rin</button>
+   <button data-img="../img/img.boss_th19/Tsukasa.png">Tsukasa</button>
+   <button data-img="../img/img.boss_th19/Mamizou.png">Mamizou</button>
+   <button data-img="../img/img.boss_th19/Yachie.png">Yachie</button>
+   <button data-img="../img/img.boss_th17/Saki.png">Saki</button>
+   <button data-img="../img/img.boss_th19/Suika.png">Suika</button>
+   <button data-img="../img/img.boss_th19/Biten.png">Biten</button>
+   <button data-img="../img/img.boss_th19/Enoko.png">Enoko</button>
+   <button data-img="../img/img.boss_th19/Chiyari.png">Chiyari</button>
+   <button data-img="../img/img.boss_th19/Hisami.png">Hisami</button>
+   <button data-img="../img/img.boss_th19/Yuuma.png">Yuuma</button>
+   <button data-img="../img/img.boss_th19/Zanmu.png">Zanmu</button>
+    </div>
+
+   <div class="content" id="boss-img">
+      <img src="../img/img.boss_th19/Reimu.png" alt="Reimu">
+    </div>
+
+    <script>
+  const buttons = document.querySelectorAll('.versao button');
+
+  const imageDisplay = document.querySelector('#boss-img img');
+
+  buttons.forEach(button => {
+    button.addEventListener('click', () => {
+    
+      const newImgPath = button.getAttribute('data-img');
+      
+ 
+      imageDisplay.src = newImgPath;
+
+     
+      buttons.forEach(b => b.classList.remove('ativar'));
+      button.classList.add('ativar');
+    });
+  });
+</script>
+</div>
+
+    
+</body>
+</html>

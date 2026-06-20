@@ -1,0 +1,110 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url(../img/img.boss_th8/background.png);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-color: #050510;
+  color: #e8dcff;
+  margin: 0;
+}
+
+/* layout principal */
+.page {
+  display: flex;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 0 20px;
+  align-items: flex-start;
+}
+
+/* texto principal */
+.texto {
+  flex: 2;
+  line-height: 1.7;
+  text-align: left;
+  background: rgba(20, 10, 40, 0.75);
+  padding: 20px;
+  border-radius: 12px;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 0 25px rgba(140, 120, 255, 0.4);
+}
+
+/* card lateral */
+.descricao {
+  flex: 1;
+  width: 360px;
+  background: linear-gradient(180deg, #1c0f3c, #3a1c6e);
+  border-radius: 12px;
+  overflow: hidden;
+  position: sticky;
+  top: 20px;
+  box-shadow: 0 0 30px rgba(120, 80, 255, 0.6);
+}
+
+/* nome do personagem */
+.nome {
+  background: linear-gradient(90deg, #3a1c6e, #6a4bff);
+  text-align: center;
+  padding: 12px;
+}
+
+.nome h1 {
+  font-size: 18px;
+  margin: 0;
+  color: #ffffff;
+  letter-spacing: 1px;
+}
+
+/* botões de versão */
+.versao {
+  display: flex;
+   flex-wrap: wrap;
+}
+
+.versao button {
+  flex: 1;
+  padding: 5px;
+  background: #2b1a5a;
+  border: none;
+  color: #e8dcff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.versao button:hover {
+  background: #6a4bff;
+}
+
+.versao button.ativar {
+  color: #fff;
+  border-bottom: 3px solid #ffd36a;
+  background: #6a4bff;
+}
+
+/* conteúdo da imagem */
+.content {
+  background: #2a175a;
+  padding: 15px;
+  text-align: center;
+}
+
+.content img {
+  width: 100%;
+  display: block;
+  border-radius: 8px;
+  box-shadow: 0 0 18px rgba(255, 230, 120, 0.6);
+}
+
+/* responsivo */
+@media (max-width: 900px) {
+  .page {
+    flex-direction: column;
+  }
+
+  .descricao {
+    position: static;
+    width: 100%;
+  }
+}

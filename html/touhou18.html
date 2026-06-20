@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unconnected Marketeers</title>
+    <link rel="stylesheet" href="../css/touhou18.css">
+    <link rel="shortcut icon" href="../img/img.cenario/favicon.ico" type="image/x-icon">
+</head>
+<body>
+   <div class="page">
+  <div class="texto">
+
+ <h1>Touhou 18 – Unconnected Marketeers</h1>
+
+    <p><b>Título:</b> Touhou Kouryuudou ~ Unconnected Marketeers</p>
+
+    <p>
+      <b>Desenvolvedora:</b> Team Shanghai Alice<br>
+      <b>Criador:</b> ZUN
+    </p>
+
+    <p><b>Data de lançamento:</b> 4 de maio de 2021</p>
+
+    <p><b>Plataforma:</b> PC (Windows)</p>
+
+    <p><b>Gênero:</b> Shoot 'em up (danmaku / bullet hell)</p>
+
+    <p>
+      <b>Descrição:</b><br>
+      Touhou 18 é o décimo oitavo jogo principal da série Touhou.<br>
+      A história gira em torno de um misterioso mercado negro
+      que começa a se espalhar por Gensokyo.<br>
+      Nesse mercado, cartas especiais contendo habilidades
+      de humanos, youkais e deuses passam a ser vendidas livremente.
+    </p>
+
+    <h1>História</h1>
+
+    <p>
+      De repente, cartas estranhas contendo poderes especiais
+      começam a aparecer por toda Gensokyo. Qualquer pessoa
+      que possua uma dessas cartas pode utilizar habilidades
+      que normalmente não teria.
+    </p>
+
+    <p>
+      Reimu Hakurei, Marisa Kirisame, Sakuya Izayoi
+      e Sanae Kochiya decidem investigar a origem dessas
+      cartas misteriosas.
+    </p>
+
+    <p>
+      Durante a investigação, elas descobrem que um mercado
+      secreto foi criado para comercializar essas cartas
+      de habilidade.
+    </p>
+
+    <p>
+      A responsável por esse sistema é Chimata Tenkyuu,
+      uma deusa do mercado que controla as trocas e
+      transações dentro de Gensokyo.
+    </p>
+
+    <p>
+      O objetivo por trás da distribuição das cartas
+      envolve testar o equilíbrio de poder entre
+      humanos, youkais e deuses.
+    </p>
+
+    <p>
+      O jogo introduz o sistema de **Ability Cards**,
+      permitindo que o jogador compre e equipe poderes
+      especiais antes ou durante a partida,
+      criando diferentes estilos de jogo.
+    </p>
+
+    <h1>Personagens Jogáveis</h1>
+
+    <p>
+      <a href="Reimu.html">Reimu Hakurei</a> (sacerdotisa do Santuário Hakurei)
+    </p>
+
+    <p>
+      <a href="Marisa.html">Marisa Kirisame</a> (maga humana)
+    </p>
+
+    <p>
+      <a href="Sakuya.html">Sakuya Izayoi</a> (empregada da Mansão Scarlet Devil)
+    </p>
+
+    <p>
+      <a href="Sanae.html">Sanae Kochiya</a> (sacerdotisa do Santuário Moriya)
+    </p>
+
+    <p>
+      Cada personagem pode equipar diferentes cartas
+      de habilidade, alterando ataques, defesa e
+      habilidades especiais durante a campanha.
+    </p>
+</div>
+
+   <div class="descricao">
+
+    <div class="nome">
+      <h1>boss touhou 18</h1>
+    </div>
+
+    <div class="versao">
+   <button class="ativar" data-img="../img/img.boss_th18/Mike.png">Mike</button>
+   <button data-img="../img/img.boss_th18/Takane.png">Takane</button>
+   <button data-img="../img/img.boss_th18/Dayuu.png">Sannyo</button>
+   <button data-img="../img/img.boss_th18/Misumaru.png">Misumaru</button>
+   <button data-img="../img/img.boss_th18/Tsukasa.png">Tsukasa</button>
+   <button data-img="../img/img.boss_th18/Megumu.png">Megumu</button>
+   <button data-img="../img/img.boss_th18/Chimata.png">Chimata</button>
+   <button data-img="../img/img.boss_th18/Himemushi.png">Momoyo</button>
+    </div>
+
+   <div class="content" id="boss-img">
+      <img src="../img/img.boss_th18/Mike.png" alt="Mike">
+    </div>
+
+    <script>
+  const buttons = document.querySelectorAll('.versao button');
+
+  const imageDisplay = document.querySelector('#boss-img img');
+
+  buttons.forEach(button => {
+    button.addEventListener('click', () => {
+    
+      const newImgPath = button.getAttribute('data-img');
+      
+ 
+      imageDisplay.src = newImgPath;
+
+     
+      buttons.forEach(b => b.classList.remove('ativar'));
+      button.classList.add('ativar');
+    });
+  });
+</script>
+</div>
+
+    
+</body>
+</html>

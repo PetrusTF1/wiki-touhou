@@ -1,0 +1,128 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url(../img/img.cenario/cenario18.png);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; 
+  background-color: #1c1a2e; /* noite roxa */
+  color: #f8eaff;
+  margin: 0;
+}
+
+/* layout geral */
+.page {
+  display: flex;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 0 20px;
+  align-items: flex-start;
+}
+
+.texto {
+  flex: 2;
+  line-height: 1.6;
+  text-align: left;
+  background: #e4c0cf;
+  border: #f28fb3 solid;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+/* CARD lateral */
+.descricao {
+  flex: 1;
+  width: 360px;
+  background: #2a0f3a; /* roxo escuro */
+  border-radius: 8px;
+  overflow: hidden; 
+  position: sticky;
+  top: 20px;
+  box-shadow: 0 0 20px rgba(180, 140, 255, 0.3);
+}
+
+/* nome */
+.nome {
+  background: #f28fb3; /* rosa principal */
+  text-align: center;
+  padding: 12px;
+}
+
+.nome h1 {
+  font-size: 16px;
+  margin: 0;
+  color: #ffffff;
+  letter-spacing: 1px;
+}
+
+/* botões */
+.versao {
+  display: flex;
+}
+
+.versao button {
+  flex: 1;
+  padding: 8px;
+  background: #8a6bd6; /* roxo médio */
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.versao button:hover {
+  background: #b48cff; /* roxo claro */
+}
+
+.versao button.ativar {
+  color: #fff;
+  border-bottom: 2px solid #f28fb3;
+  background: #2a0f3a;
+}
+
+/* imagem */
+.content {
+  background: transparent;
+  padding: 15px;
+  text-align: center;
+}
+
+.content img {
+  width: 100%;
+  display: block;
+  border-radius: 6px;
+  box-shadow: 0 0 15px rgba(242, 143, 179, 0.5);
+}
+
+/* infos */
+.informacao {
+  background: #f8c8dc; /* rosa claro */
+  padding: 10px;
+  color: #3a2a40;
+  border-top: 2px solid #f28fb3;
+}
+
+/* títulos do texto */
+.texto h2 {
+  color: #f28fb3;
+  border-left: 5px solid #f28fb3;
+  padding-left: 10px;
+  margin-top: 25px;
+}
+
+/* destaques */
+.texto b {
+  color: #d6b4ff;
+}
+
+/* responsivo */
+@media (max-width: 900px) {
+  .page {
+    flex-direction: column;
+  }
+
+  .descricao {
+    position: static;
+    width: 100%;
+  }
+}

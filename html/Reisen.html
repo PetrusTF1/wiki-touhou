@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reisen Udongein Inaba</title>
+  <link rel="stylesheet" href="../css/Reisen.css">
+  <link rel="shortcut icon" href="../img/img.cenario/favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+<div class="page">
+
+
+  <div class="texto">
+    <!--INFORMAÇÃO DO PERSONAGEM-->
+    <h2>PERSONALIDADE</h2>
+
+<p><b>Reisen é frequentemente vista como:</b></p>
+
+Séria e responsável – ela leva seu trabalho com dedicação e tenta sempre cumprir suas tarefas corretamente.<br><br>
+
+Um pouco ansiosa – costuma se preocupar com erros e consequências, principalmente quando está sob pressão.<br><br>
+
+Educada e respeitosa – trata os outros com formalidade, especialmente seus superiores.<br><br>
+
+Ela transmite a sensação de alguém confiável, mas que ainda carrega inseguranças internas.
+
+<p><b>🧠 Inteligência e disciplina</b></p>
+
+<p>
+Reisen é bastante inteligente e organizada:<br>
+Segue ordens com precisão<br>
+Analisa situações antes de agir<br>
+Aprende rápido com seus erros<br><br>
+
+Ela tenta sempre agir da forma mais correta possível.
+</p>
+
+<p><b>😖 Natureza ansiosa</b></p>
+
+<p>
+Apesar de competente, Reisen pode ficar nervosa:<br><br>
+
+Tem medo de falhar em suas responsabilidades<br>
+Fica pressionada sob autoridade de Eirin e Kaguya<br>
+Às vezes entra em pânico em situações inesperadas<br><br>
+
+Isso mostra seu lado mais humano e vulnerável.
+</p>
+
+<p><b>🌙 Passado e amadurecimento</b></p>
+
+<p>
+Reisen tem um passado como soldada lunar:<br><br>
+
+Fugiu da Lua durante um conflito<br>
+Busca viver em paz na Terra<br>
+Aprendeu a valorizar a vida em Gensokyo<br><br>
+
+Ela tenta deixar para trás sua vida anterior.
+</p>
+
+<p><b>👥 Relação com os outros</b></p>
+
+<p>
+Suas relações são baseadas em lealdade:<br><br>
+
+Serve fielmente Eirin Yagokoro<br>
+Trabalha sob Kaguya Houraisan<br>
+Interage com humanos e youkai de forma educada<br><br>
+
+Apesar de tudo, ela deseja viver tranquilamente.
+</p>
+
+
+<h2>OCUPAÇÃO</h2>
+
+<p><b>Assistente da Eientei</b></p>
+
+<p>
+Reisen trabalha como assistente e farmacêutica em Eientei, ajudando na produção de remédios e no atendimento de pacientes.
+</p>
+
+<p><b>Mensageira e guarda</b></p>
+
+<p>
+Ela também atua como mensageira e responsável pela proteção do local contra ameaças externas.
+</p>
+
+
+<h2>HABILIDADES</h2>
+
+<p><b>Manipulação de ondas cerebrais</b></p>
+
+<p>
+O poder central de Reisen é controlar ondas mentais:
+</p>
+
+<p>
+Induz alucinações e ilusões<br>
+Afeta a percepção dos inimigos<br>
+Confunde sentidos e direções<br>
+Pode causar pânico ou desorientação
+</p>
+
+<p><b>Olhos da insanidade</b></p>
+
+<p>
+Seus olhos vermelhos possuem um poder especial que intensifica suas habilidades mentais, tornando suas ilusões extremamente difíceis de resistir.
+</p>
+
+<p><b>Capacidade lunar</b></p>
+
+<p>
+Como ex-habitante da Lua, Reisen possui habilidades acima do humano comum, incluindo reflexos e resistência elevados.
+</p>
+
+<p><b>Voo e combate danmaku</b></p>
+
+<p>
+Ela pode voar e participar de batalhas aéreas, utilizando projéteis de energia baseados em ondas e padrões visuais confusos.
+</p>
+
+<p>
+Sua combinação de habilidades mentais e disciplina a torna uma combatente perigosa e imprevisível.
+</p>
+    <h2>SPEALL CARDS</h2>
+
+    <video controls height="200px" src="../video.Spell/Spellcard57.mp4"></video>  
+    <video controls height="200px" src="../video.Spell/Spellcard58.mp4"></video>
+    <video controls height="200px" src="../video.Spell/Spellcard59.mp4"></video>
+    <video controls height="200px" src="../video.Spell/Spellcard60.mp4"></video>
+  </div>
+
+  
+  <div class="descricao">
+
+    <div class="nome">
+      <h1>Reisen Udongein Inaba</h1>
+    </div>
+
+    <div class="versao">
+  <button class="ativar" data-img="../img/img.personagem/img.reisen/reisenth8.png">th8</button>
+  <button data-img="../img/img.personagem/img.reisen/reisenth9.png">th9</button>
+  <button data-img="../img/img.personagem/img.reisen/reisenth10,5.png">th10.5</button>
+  <button data-img="../img/img.personagem/img.reisen/reisenth15.png">th15</button>
+  <button data-img="../img/img.personagem/img.reisen/reisenth15,5.png">th15.5</button>
+  </div>
+
+    <div class="content" id="Reisen-img">
+      <img src="../img/img.personagem/img.reisen/reisenth8.png" alt="Reisen Udongein Inaba">
+    </div>
+
+    <div class="informacao">
+      <p>Espécie: Lunariana</p>
+      <p>Título: Coelho da Lua Lunático (Lunatic Moon Rabbit)</p>
+    </div>
+
+  </div>
+  <!--BUTÃO PARA MUDAR A IMAGEM-->
+<script>
+  const buttons = document.querySelectorAll('.versao button');
+
+  const imageDisplay = document.querySelector('#Reisen-img img');
+
+  buttons.forEach(button => {
+    button.addEventListener('click', () => {
+    
+      const newImgPath = button.getAttribute('data-img');
+      
+ 
+      imageDisplay.src = newImgPath;
+
+     
+      buttons.forEach(b => b.classList.remove('ativar'));
+      button.classList.add('ativar');
+    });
+  });
+</script>
+</div>
+</body>
+</html>

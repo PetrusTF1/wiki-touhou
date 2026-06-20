@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cirno</title>
+  <link rel="stylesheet" href="../css/Cirno.css">
+  <link rel="shortcut icon" href="../img/img.cenario/favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+<div class="page">
+
+
+  <div class="texto">
+    <!--INFORMAÇÃO DO PERSONAGEM-->
+<h2>PERSONALIDADE</h2>
+
+<p><b>Cirno é frequentemente vista como:</b></p>
+
+<p>
+Confiante demais – acredita ser a mais forte, mesmo quando não é.<br><br>
+Brincalhona – adora pregar peças e se divertir, especialmente no gelo.<br><br>
+Impulsiva – age sem pensar muito nas consequências.
+</p>
+
+<p>
+Ela transmite a sensação de uma criança orgulhosa que quer provar sua força a todo momento.
+</p>
+
+<p><b>🧠 Inteligência limitada</b></p>
+
+<p>
+Cirno não é conhecida por ser muito inteligente:<br>
+Toma decisões precipitadas<br>
+Se distrai facilmente<br>
+Nem sempre entende situações complexas<br><br>
+
+Apesar disso, às vezes surpreende com ideias inesperadas.
+</p>
+
+<p><b>🎭 Comportamento infantil</b></p>
+
+<p>
+Ela demonstra traços típicos de uma criança:<br><br>
+Gosta de brincar<br>
+Faz desafios para provar que é forte<br>
+Pode ficar irritada quando perde<br><br>
+
+Seu jeito competitivo faz parte de sua personalidade.
+</p>
+
+<p><b>🌿 Vida na natureza</b></p>
+
+<p>
+Cirno vive próxima ao lago gelado:<br><br>
+Passa muito tempo ao ar livre<br>
+Interage com outras fadas<br>
+Protege seu território de forma brincalhona
+</p>
+
+<p>
+Ela prefere ambientes frios, onde seus poderes são mais eficazes.
+</p>
+
+<p><b>🧊 Relação com os outros</b></p>
+
+<p>
+Cirno interage com várias criaturas de Gensokyo:<br><br>
+Compete com outras fadas<br>
+Pode desafiar humanos e youkais<br>
+Às vezes coopera, mas raramente leva algo a sério<br><br>
+
+Apesar disso, não é maldosa e só quer se divertir.
+</p>
+
+
+<h2>OCUPAÇÃO</h2>
+
+<p><b>Fada do gelo</b></p>
+
+<p>
+Cirno é uma fada da natureza que vive nas proximidades de um lago congelado, passando seus dias brincando e causando pequenas confusões.
+</p>
+
+<p><b>Autoproclamada "a mais forte"</b></p>
+
+<p>
+Embora não tenha uma ocupação formal, Cirno constantemente se coloca em desafios para provar sua força.
+</p>
+
+
+<h2>HABILIDADES</h2>
+
+<p><b>Manipulação de gelo</b></p>
+
+<p>
+O principal poder de Cirno é controlar o gelo:
+</p>
+
+<p>
+Pode congelar objetos e superfícies<br>
+Cria projéteis de gelo<br>
+Consegue reduzir drasticamente a temperatura ao redor
+</p>
+
+<p>
+Esse poder é especialmente forte em ambientes frios.
+</p>
+
+<p><b>Controle do frio</b></p>
+
+<p>
+Ela pode gerar e manipular o frio livremente, afetando o ambiente ao seu redor.
+</p>
+
+<p><b>Voo</b></p>
+
+<p>
+Como uma fada, Cirno pode voar com facilidade, se movendo rapidamente durante batalhas.
+</p>
+
+<p><b>Resistência natural</b></p>
+
+<p>
+Por ser uma fada, Cirno possui uma certa resistência e tende a se recuperar mesmo após ser derrotada.
+</p>
+
+<p>
+Mesmo não sendo a mais forte de Gensokyo, sua confiança e poderes de gelo fazem dela uma oponente imprevisível.
+</p>
+    <h2>SPEALL CARDS</h2>
+
+    <video controls height="200px" src="../video.Spell/spellcard61.mp4"></video>  
+    <video controls height="200px" src="../video.Spell/spellcard62.mp4"></video>
+    <video controls height="200px" src="../video.Spell/Spellcard63.mp4"></video>
+    <video controls height="200px" src="../video.Spell/Spellcard64.mp4"></video>
+  </div>
+
+  
+  <div class="descricao">
+
+    <div class="nome">
+      <h1>Cirno</h1>
+    </div>
+
+    <div class="versao">
+    <button class="ativar" data-img="../img/img.personagem/img.cirno/Cirnoth6.png">th6</button>
+    <button data-img="../img/img.personagem/img.Cirno/Cirnoth7,5.png">th7,5</button>
+    <button data-img="../img/img.personagem/img.Cirno/Cirnoth9.png">th9</button>
+    <button data-img="../img/img.personagem/img.cirno/Cirnoth14.png">th14</button>
+    <button data-img="../img/img.personagem/img.cirno/Cirnoth16.png">th16</button>
+  </div>
+
+    <div class="content" id="Cirno-img">
+      <img src="../img/img.personagem/img.cirno/Cirnoth6.png" alt="Cirno">
+    </div>
+
+    <div class="informacao">
+      <p>Espécie:Fada</p>
+      <p>Título:A Fada de Gelo Forte (The Strong Ice Fairy)</p> 
+    </div>
+
+  </div>
+  <!--BUTÃO PARA MUDAR A IMAGEM-->
+<script>
+  const buttons = document.querySelectorAll('.versao button');
+
+  const imageDisplay = document.querySelector('#Cirno-img img');
+
+  buttons.forEach(button => {
+    button.addEventListener('click', () => {
+    
+      const newImgPath = button.getAttribute('data-img');
+      
+ 
+      imageDisplay.src = newImgPath;
+
+     
+      buttons.forEach(b => b.classList.remove('ativar'));
+      button.classList.add('ativar');
+    });
+  });
+</script>
+</div>
+</body>
+</html>

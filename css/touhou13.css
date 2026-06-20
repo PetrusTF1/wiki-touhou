@@ -1,0 +1,113 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url(../img/img.boss_th13/backgroud.png);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-color: #0f1a1a; /* verde escuro espiritual */
+  color: #eafff7;
+  margin: 0;
+}
+
+/* LAYOUT PRINCIPAL */
+.page {
+  display: flex;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 0 20px;
+  align-items: flex-start; /* garante sticky */
+}
+
+/* TEXTO PRINCIPAL */
+.texto {
+  flex: 2;
+  line-height: 1.6;
+  text-align: left;
+  background: rgba(20, 60, 55, 0.6);
+  padding: 20px;
+  border-radius: 12px;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 0 20px rgba(120, 255, 220, 0.25);
+  border: 1px solid rgba(120, 255, 220, 0.3);
+}
+
+/* CARD LATERAL */
+.descricao {
+  flex: 1;
+  width: 360px;
+  background: linear-gradient(180deg, #1e5f5c, #123c3a);
+  border-radius: 12px;
+  overflow: hidden;
+  position: sticky;
+  top: 20px;
+  box-shadow: 0 0 25px rgba(120, 255, 220, 0.35);
+}
+
+/* NOME */
+.nome {
+  background: linear-gradient(90deg, #7fffd4, #4dd0e1);
+  text-align: center;
+  padding: 12px;
+}
+
+.nome h1 {
+  font-size: 18px;
+  margin: 0;
+  color: #ffffff;
+  text-shadow: 0 0 10px rgba(200, 255, 240, 0.8);
+}
+
+/* BOTÕES */
+.versao {
+  display: flex;
+  flex-wrap: wrap; /* importante para não quebrar layout */
+}
+
+.versao button {
+  flex: 1 1 50%;
+  padding: 8px;
+  background: #123c3a;
+  border: none;
+  color: #eafff7;
+  cursor: pointer;
+  transition: 0.2s;
+  font-weight: bold;
+}
+
+.versao button:hover {
+  background: #4dd0e1;
+  color: #0f1a1a;
+}
+
+.versao button.ativar {
+  border-bottom: 2px solid #ffffff;
+  background: #1e5f5c;
+}
+
+/* CONTEÚDO */
+.content {
+  background: rgba(18, 60, 58, 0.9);
+  padding: 15px;
+  text-align: center;
+}
+
+.content img {
+  width: 100%;
+  display: block;
+  border-radius: 6px;
+  box-shadow: 0 0 18px rgba(150, 255, 230, 0.5);
+  border: 2px solid rgba(200, 255, 240, 0.6);
+}
+
+/* RESPONSIVO */
+@media (max-width: 900px) {
+  .page {
+    flex-direction: column;
+  }
+
+  .descricao {
+    position: static;
+    width: 100%;
+  }
+}

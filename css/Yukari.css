@@ -1,0 +1,131 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url(../img/img.cenario/cenario13.png);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; 
+  background-color: #000000;
+  color: #eee6ff;
+  margin: 0;
+}
+
+/* layout geral */
+.page {
+  display: flex;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 0 20px;
+  align-items: flex-start;
+}
+
+.texto {
+  flex: 2;
+  line-height: 1.6;
+  text-align: left;
+  background: #4b006e;
+  border: #d4b000 solid;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+/* card lateral */
+.descricao {
+  flex: 1;
+  width: 360px;
+  background: #2a0038; /* roxo escuro */
+  border-radius: 8px;
+  overflow: hidden;
+  position: sticky;
+  top: 20px;
+  box-shadow: 0 0 20px rgba(120, 0, 160, 0.6);
+  backdrop-filter: blur(4px);
+}
+
+/* topo nome */
+.nome {
+  background: linear-gradient(90deg, #4b006e, #d4b000); /* roxo + dourado */
+  text-align: center;
+  padding: 12px;
+}
+
+.nome h1 {
+  font-size: 16px;
+  margin: 0;
+  color: #ffffff;
+  letter-spacing: 2px;
+}
+
+/* botões */
+.versao {
+  display: flex;
+}
+
+.versao button {
+  flex: 1;
+  padding: 8px;
+  background: #12001a;
+  border: none;
+  color: #f0e6ff;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.versao button:hover {
+  background: #3b0055;
+}
+
+.versao button.ativar {
+  color: #ffd700; /* dourado */
+  border-bottom: 2px solid #ffd700;
+  background: #000000;
+}
+
+/* imagem */
+.content {
+  background: transparent;
+  padding: 15px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.content img {
+  width: 100%;
+  display: block;
+  border-radius: 6px;
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.6);
+}
+
+/* texto */
+.texto h2 {
+  color: #ffd700;
+  border-left: 5px solid #7a00cc;
+  padding-left: 10px;
+  margin-top: 25px;
+}
+
+.texto b {
+  color: #caa6ff;
+}
+
+/* rodapé info */
+.informacao {
+  background: #3b0055;
+  padding: 10px;
+  color: #fff;
+  border-top: 1px solid #ffd700;
+  font-size: 14px;
+}
+
+/* responsivo */
+@media (max-width: 900px) {
+  .page {
+    flex-direction: column;
+  }
+
+  .descricao {
+    position: static;
+    width: 100%;
+  }
+}

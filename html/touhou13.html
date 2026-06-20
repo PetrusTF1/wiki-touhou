@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ten Desires</title>
+    <link rel="stylesheet" href="../css/touhou13.css">
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="page">
+        <div class="texto">
+            <h1>Touhou 13 – Ten Desires</h1>
+
+<p><b>Título:</b> Touhou Shinreibyou ~ Ten Desires</p>
+
+<p>
+  <b>Desenvolvedora:</b> Team Shanghai Alice<br>
+  <b>Criador:</b> ZUN
+</p>
+
+<p><b>Data de lançamento:</b> 13 de agosto de 2011</p>
+
+<p><b>Plataforma:</b> PC (Windows)</p>
+
+<p><b>Gênero:</b> Shoot 'em up (danmaku / bullet hell)</p>
+
+<p>
+  <b>Descrição:</b><br>
+  Touhou 13 é o décimo terceiro jogo principal da série Touhou.<br>
+  A história gira em torno de espíritos divinos que começam a surgir
+  por toda Gensokyo, especialmente após os eventos envolvendo
+  o Templo Myouren.<br>
+  Esses espíritos parecem estar se reunindo para o renascimento
+  de uma figura importante do passado.
+</p>
+
+<h1>História</h1>
+
+<p>
+  Após a construção do Templo Myouren, espíritos divinos começam
+  a aparecer em grande quantidade por Gensokyo. Eles não são
+  exatamente hostis, mas seu comportamento é incomum.
+</p>
+
+<p>
+  Reimu Hakurei, Marisa Kirisame e Sanae Kochiya partem
+  novamente para investigar o fenômeno, temendo que um novo
+  incidente esteja se formando.
+</p>
+
+<p>
+  Durante a jornada, elas descobrem que os espíritos estão
+  se reunindo para permitir a ressurreição de Toyosatomimi
+  no Miko, uma santa lendária baseada em uma figura histórica.
+</p>
+
+<p>
+  Miko havia preparado sua própria reencarnação séculos atrás,
+  entrando em estado de hibernação para retornar no momento
+  apropriado.
+</p>
+
+<p>
+  Seus seguidores — incluindo Mononobe no Futo e Soga no Tojiko —
+  trabalham para garantir que sua ressurreição ocorra com sucesso.
+</p>
+
+<p>
+  No final, Toyosatomimi no Miko desperta e estabelece
+  o Salão do Espírito Divino em Gensokyo, trazendo uma
+  nova influência religiosa à região.
+</p>
+
+<p>
+  O jogo introduz o sistema de coleta de espíritos divinos,
+  que concedem bônus temporários, pontos extras e influenciam
+  o estilo de jogo estratégico.
+</p>
+
+<h1>Personagens Jogáveis</h1>
+
+<p>
+  <a href="Reimu.html">Reimu Hakurei</a> (sacerdotisa do Santuário Hakurei)
+</p>
+
+<p>
+  <a href="Marisa.html">Marisa Kirisame</a> (maga humana)
+</p>
+
+<p>
+  <a href="Sanae.html">Sanae Kochiya</a> (sacerdotisa do Santuário Moriya)
+</p>
+
+<p>
+  <a href="Youmu.html">Youmu Konpaku</a> (jardineira do Submundo)
+</p>
+
+<p>
+  Cada personagem possui diferentes tipos de disparo e habilidades,
+  alterando a forma como os espíritos são coletados e utilizados
+  durante a campanha.
+</p>
+     </div>
+     <div class="descricao">
+
+    <div class="nome">
+      <h1>boss touhou 13</h1>
+    </div>
+
+    <div class="versao">
+   <button class="ativar" data-img="../img/img.boss_th13/Yuyuko.png">Yuyuko</button>
+   <button data-img="../img/img.boss_th13/Kyouko.png">Kyouko</button>
+   <button data-img="../img/img.boss_th13/Kogasa.png">Kogasa </button>
+   <button data-img="../img/img.boss_th13/Yoshika.png">Yoshika</button>
+   <button data-img="../img/img.boss_th13/Seiga.png">Seiga</button>
+   <button data-img="../img/img.boss_th13/Tojiko.png">Tojiko</button>
+   <button data-img="../img/img.boss_th13/Futo.png">Futo</button>
+    <button data-img="../img/img.boss_th13/Miko.png">Miko</button>
+    <button data-img="../img/img.boss_th13/Mamizou.png">Mamizou</button>
+    </div>
+
+   <div class="content" id="boss-img">
+      <img src="../img/img.boss_th13/Yuyuko.png" alt="Yuyuko">
+    </div>
+
+    <script>
+  const buttons = document.querySelectorAll('.versao button');
+
+  const imageDisplay = document.querySelector('#boss-img img');
+
+  buttons.forEach(button => {
+    button.addEventListener('click', () => {
+    
+      const newImgPath = button.getAttribute('data-img');
+      
+ 
+      imageDisplay.src = newImgPath;
+
+     
+      buttons.forEach(b => b.classList.remove('ativar'));
+      button.classList.add('ativar');
+    });
+  });
+</script>
+    </div>
+    
+</body>
+</html>

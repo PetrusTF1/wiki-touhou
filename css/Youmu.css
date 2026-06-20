@@ -1,0 +1,129 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url(../img/img.cenario/cenario19.png);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; 
+  background-color: #0d1a14; /* verde escuro */
+  color: #ecfff4;
+  margin: 0;
+}
+
+/* layout */
+.page {
+  display: flex;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 0 20px;
+  align-items: flex-start;
+}
+
+.texto {
+  flex: 2;
+  line-height: 1.6;
+  text-align: left;
+  background: #245c44;
+  border: #ecfff4 solid;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+/* CARD lateral */
+.descricao {
+  flex: 1;
+  width: 360px;
+  background: #14261d; /* verde escuro elegante */
+  border-radius: 8px;
+  overflow: hidden; 
+  position: sticky;
+  top: 20px;
+  box-shadow: 0 0 20px rgba(100, 255, 170, 0.25);
+}
+
+/* nome */
+.nome {
+  background: #3ecf8e; /* verde principal */
+  text-align: center;
+  padding: 12px;
+}
+
+.nome h1 {
+  font-size: 16px;
+  margin: 0;
+  color: #022c22;
+  letter-spacing: 1px;
+}
+
+/* botões */
+.versao {
+  display: flex;
+}
+
+.versao button {
+  flex: 1;
+  padding: 8px;
+  background: #1b3a2c;
+  border: none;
+  color: #bfffe0;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: bold;
+}
+
+.versao button:hover {
+  background: #245c44;
+}
+
+.versao button.ativar {
+  color: #3ecf8e;
+  border-bottom: 2px solid #3ecf8e;
+  background: #0e1f17;
+}
+
+/* imagem */
+.content {
+  background: transparent;
+  padding: 15px;
+  text-align: center;
+}
+
+.content img {
+  width: 100%;
+  display: block;
+  border-radius: 6px;
+  box-shadow: 0 0 15px rgba(62, 207, 142, 0.4);
+}
+
+/* info */
+.informacao {
+  background: #1b3a2c;
+  padding: 10px;
+  color: #bfffe0;
+  border-top: 2px solid #3ecf8e;
+}
+
+/* títulos */
+.texto h2 {
+  color: #3ecf8e;
+  border-left: 5px solid #3ecf8e;
+  padding-left: 10px;
+  margin-top: 25px;
+}
+
+/* destaques */
+.texto b {
+  color: #9fffd0;
+}
+
+/* responsivo */
+@media (max-width: 900px) {
+  .page {
+    flex-direction: column;
+  }
+
+  .descricao {
+    position: static;
+    width: 100%;
+  }
+}

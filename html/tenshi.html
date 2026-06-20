@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tenshi Hinanawi</title>
+  <link rel="stylesheet" href="../css/Tenshi.css">
+  <link rel="shortcut icon" href="../img/img.cenario/favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+<div class="page">
+
+
+  <div class="texto">
+    <!--INFORMAÇÃO DO PERSONAGEM-->
+<h2>PERSONALIDADE</h2>
+
+<p><b>Tenshi é frequentemente vista como:</b></p>
+
+Arrogante e orgulhosa – ela se considera superior por ser uma celestial e gosta de demonstrar isso.<br><br>
+
+Teimosa – dificilmente admite quando está errada e insiste em fazer as coisas do seu jeito.<br><br>
+
+Entediada – por viver uma vida perfeita e sem preocupações, ela busca emoção causando problemas.<br><br>
+
+Ela transmite a sensação de alguém poderosa, mas imatura e impulsiva.
+
+<p><b>🧠 Inteligência e impulsividade</b></p>
+
+<p>
+Tenshi não é burra, mas age sem pensar:<br>
+Entende as situações ao seu redor<br>
+Mas prefere agir antes de refletir<br>
+Toma decisões baseadas em emoção<br><br>
+
+Ela muitas vezes cria problemas que poderia evitar.
+</p>
+
+<p><b>😈 Comportamento provocador</b></p>
+
+<p>
+Tenshi adora provocar os outros:<br><br>
+
+Gosta de desafiar pessoas fortes<br>
+Se diverte criando caos em Gensokyo<br>
+Age como se tudo fosse um jogo<br><br>
+
+Ela quer testar sua força e aliviar seu tédio.
+</p>
+
+<p><b>🌩️ Natureza rebelde</b></p>
+
+<p>
+Mesmo sendo uma celestial, Tenshi não segue regras:<br><br>
+
+Desobedece a ordem do Céu<br>
+Causa terremotos e incidentes<br>
+Busca viver aventuras perigosas<br><br>
+
+Ela prefere a liberdade ao dever.
+</p>
+
+<p><b>👥 Relação com os outros</b></p>
+
+<p>
+Suas relações são baseadas em rivalidade e desafio:<br><br>
+
+Provoca Reimu Hakurei constantemente<br>
+Enfrenta youkai e humanos sem distinção<br>
+Não leva a maioria das pessoas a sério<br><br>
+
+Mas no fundo, gosta de interações que a tirem do tédio.
+</p>
+
+
+<h2>OCUPAÇÃO</h2>
+
+<p><b>Celestial</b></p>
+
+<p>
+Tenshi vive no Céu, onde os celestiais desfrutam de uma existência sem sofrimento.
+</p>
+
+<p><b>Causadora de incidentes</b></p>
+
+<p>
+Por tédio, ela frequentemente desce até Gensokyo e causa distúrbios, como terremotos e mudanças no equilíbrio da terra.
+</p>
+
+
+<h2>HABILIDADES</h2>
+
+<p><b>Manipulação da terra</b></p>
+
+<p>
+O poder central de Tenshi é controlar a terra e o solo:
+</p>
+
+<p>
+Criar terremotos<br>
+Manipular rochas e montanhas<br>
+Alterar o terreno ao seu redor<br>
+Controlar a energia da terra
+</p>
+
+<p><b>Espada de Hisou</b></p>
+
+<p>
+Ela empunha a espada celestial Hisou no Tsurugi, capaz de controlar o fluxo da terra e do céu, aumentando seu poder em batalha.
+</p>
+
+<p><b>Resistência celestial</b></p>
+
+<p>
+Como uma celestial, Tenshi possui resistência muito superior à de humanos e youkai comuns.
+</p>
+
+<p><b>Voo e combate danmaku</b></p>
+
+<p>
+Ela pode voar livremente e lutar usando padrões de danmaku baseados em energia terrestre e celestial.
+</p>
+
+<p>
+Sua combinação de poder bruto e personalidade impulsiva a torna uma adversária extremamente perigosa.
+</p>.
+    </p>
+
+    <h2>SPEALL CARDS</h2>
+
+    <video controls height="200px" src="../video.Spell/Spellcard49.mp4"></video>  
+    <video controls height="200px" src="../video.Spell/Spellcard50.mp4"></video>
+    <video controls height="200px" src="../video.Spell/Spellcard51.mp4"></video>
+    <video controls height="200px" src="../video.Spell/Spellcard52.mp4"></video>
+  </div>
+
+  
+  <div class="descricao">
+
+    <div class="nome">
+      <h1>Tenshi Hinanawi</h1>
+    </div>
+
+    <div class="versao">
+  <button class="ativar" data-img="../img/img.personagem/img.tenshi/tenshith10,5.png">th10,5</button>
+  <button data-img="../img/img.personagem/img.tenshi/tenshith15,5.png">th15.5</button>
+  </div>
+
+    <div class="content" id="Tenshi-img">
+      <img src="../img/img.personagem/img.tenshi/tenshith10,5.png" alt="Tenshi Hinanawi">
+    </div>
+
+    <div class="informacao">
+      <p>Espécie: Celestial</p>
+      <p>Título: Jovem Senhora de Bhavagra (Young Mistress of Bhavagra)</p>
+    </div>
+
+  </div>
+  <!--BUTÃO PARA MUDAR A IMAGEM-->
+<script>
+  const buttons = document.querySelectorAll('.versao button');
+
+  const imageDisplay = document.querySelector('#Tenshi-img img');
+
+  buttons.forEach(button => {
+    button.addEventListener('click', () => {
+    
+      const newImgPath = button.getAttribute('data-img');
+      
+ 
+      imageDisplay.src = newImgPath;
+
+     
+      buttons.forEach(b => b.classList.remove('ativar'));
+      button.classList.add('ativar');
+    });
+  });
+</script>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,131 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url(../img/img.boss_th6/backgroundth6.png);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; 
+  background-color: #0a0000;
+  color: #ffeaea;
+  margin: 0;
+}
+
+/* layout geral */
+.page {
+  display: flex;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 0 20px;
+  align-items: flex-start;
+}
+
+/* texto principal */
+.texto {
+  flex: 2;
+  line-height: 1.6;
+  text-align: left;
+  background: #4a0000;
+  padding: 20px;
+  border-radius: 12px;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 0 20px rgba(116, 11, 11, 0.3);;
+}
+
+.texto h2 {
+  color: #ff4d4d;
+  border-left: 5px solid #ff1a1a;
+  padding-left: 10px;
+  margin-top: 25px;
+}
+
+.texto b {
+  color: #ffd6d6;
+}
+
+/* caixa lateral */
+.descricao {
+  flex: 1;
+  width: 360px;
+  background: linear-gradient(180deg, #4a0000, #1a0000);
+  border-radius: 8px;
+  overflow: hidden;
+  position: sticky;
+  top: 20px;
+  box-shadow: 0 0 25px rgba(0,0,0,0.8);
+}
+
+/* nome topo */
+.nome {
+  background: #8b0000;
+  text-align: center;
+  padding: 12px;
+  border-bottom: 1px solid #ff4d4d;
+}
+
+.nome h1 {
+  font-size: 16px;
+  margin: 0;
+  color: #ffffff;
+  letter-spacing: 2px;
+}
+
+/* botoes versão */
+.versao {
+  display: flex;
+   flex-wrap: wrap;
+}
+
+.versao button {
+  flex: 1;
+  padding: 8px;
+  background: #2b0000;
+  border: none;
+  color: #ffd6d6;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.versao button:hover {
+  background: #5a0000;
+}
+
+.versao button.ativar {
+  color: #ff4d4d;
+  border-bottom: 2px solid #ff4d4d;
+  background: #0a0000;
+}
+
+/* imagem */
+.content {
+  background: transparent;
+  padding: 15px;
+  text-align: center;
+}
+
+.content img {
+  width: 100%;
+  display: block;
+  border-radius: 6px;
+  box-shadow: 0 0 20px rgba(255,0,0,0.5);
+}
+
+/* info box */
+.informacao {
+  background: #2b0000;
+  padding: 10px;
+  color: #ffeaea;
+  border-top: 1px solid #ff4d4d;
+  font-size: 14px;
+}
+
+/* responsivo */
+@media (max-width: 900px) {
+  .page {
+    flex-direction: column;
+  }
+
+  .descricao {
+    position: static;
+    width: 100%;
+  }
+}

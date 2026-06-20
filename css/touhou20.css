@@ -1,0 +1,113 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url(../img/img.boss_th20/background.png);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-color: #1a1026;
+  color: #f6f0ff;
+  margin: 0;
+}
+
+/* LAYOUT PRINCIPAL */
+.page {
+  display: flex;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 0 20px;
+  align-items: flex-start;
+}
+
+/* TEXTO PRINCIPAL */
+.texto {
+  flex: 2;
+  line-height: 1.6;
+  text-align: left;
+  background: rgba(45, 20, 70, 0.65);
+  padding: 20px;
+  border-radius: 12px;
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(230, 200, 120, 0.4);
+  box-shadow: 0 0 20px rgba(220, 180, 90, 0.25);
+}
+
+/* CARD LATERAL */
+.descricao {
+  flex: 1;
+  width: 360px;
+  background: linear-gradient(180deg, #6a3fb0, #2a174a);
+  border-radius: 12px;
+  overflow: hidden;
+  position: sticky;
+  top: 20px;
+  box-shadow: 0 0 25px rgba(210, 170, 80, 0.4);
+}
+
+/* NOME */
+.nome {
+  background: linear-gradient(90deg, #ffd86b, #b88cff);
+  text-align: center;
+  padding: 12px;
+}
+
+.nome h1 {
+  font-size: 18px;
+  margin: 0;
+  color: #2a174a;
+  font-weight: bold;
+}
+
+/* BOTÕES */
+.versao {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.versao button {
+  flex: 1 1 50%;
+  padding: 8px;
+  background: #2a174a;
+  border: none;
+  color: #f6f0ff;
+  cursor: pointer;
+  transition: 0.2s;
+  font-weight: bold;
+}
+
+.versao button:hover {
+  background: #b88cff;
+  color: #1a1026;
+}
+
+.versao button.ativar {
+  border-bottom: 2px solid #ffd86b;
+  background: #6a3fb0;
+}
+
+/* CONTEÚDO */
+.content {
+  background: rgba(40, 20, 60, 0.9);
+  padding: 15px;
+  text-align: center;
+}
+
+.content img {
+  width: 100%;
+  display: block;
+  border-radius: 6px;
+  border: 2px solid rgba(255, 220, 120, 0.7);
+  box-shadow: 0 0 18px rgba(230, 200, 120, 0.5);
+}
+
+/* RESPONSIVO */
+@media (max-width: 900px) {
+  .page {
+    flex-direction: column;
+  }
+
+  .descricao {
+    position: static;
+    width: 100%;
+  }
+}

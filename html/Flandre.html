@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flandre Scarlet</title>
+  <link rel="stylesheet" href="../css/Flandre.css">
+  <link rel="shortcut icon" href="../img/img.cenario/favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+<div class="page">
+
+
+  <div class="texto">
+    <!--INFORMAÇÃO DO PERSONAGEM-->
+<h2>PERSONALIDADE</h2>
+
+<p><b>Flandre é frequentemente vista como:</b></p>
+
+Infantil e imprevisível – age de forma inocente, mas completamente caótica.<br><br>
+
+Instável – suas emoções mudam rapidamente, podendo ir da alegria à fúria em segundos.<br><br>
+
+Curiosa – se interessa facilmente por coisas novas e pessoas diferentes.<br><br>
+
+Ela transmite a sensação de uma criança poderosa que não entende totalmente seus próprios limites.
+
+<p><b>🧠 Consciência limitada</b></p>
+
+<p>
+Flandre não tem plena noção das consequências de seus atos:<br>
+Age por impulso<br>
+Não mede o perigo de seus poderes<br>
+Pode destruir algo apenas por curiosidade<br><br>
+
+Isso a torna extremamente perigosa mesmo sem intenção maligna.
+</p>
+
+<p><b>🎭 Comportamento infantil</b></p>
+
+<p>
+Ela demonstra traços típicos de uma criança:<br><br>
+
+Gosta de brincar<br>
+Fica entediada com facilidade<br>
+Pode fazer birra quando contrariada<br><br>
+
+Mas suas “brincadeiras” podem ser destrutivas.
+</p>
+
+<p><b>🌑 Isolamento</b></p>
+
+<p>
+Flandre passou muito tempo isolada dentro da mansão:<br><br>
+
+Tem pouco contato social<br>
+Não entende bem as relações humanas<br>
+Depende bastante da irmã Remilia<br><br>
+
+Isso contribui para seu comportamento instável.
+</p>
+
+<p><b>🩸 Relação com os outros</b></p>
+
+<p>
+Flandre tem poucas relações diretas:<br><br>
+
+É irmã de Remilia Scarlet<br>
+É cuidada por Sakuya Izayoi<br>
+Raramente interage com visitantes<br><br>
+
+Apesar disso, pode demonstrar afeto de forma sincera.
+</p>
+
+
+<h2>OCUPAÇÃO</h2>
+
+<p><b>Habitante da Mansão do Diabo Escarlate</b></p>
+
+<p>
+Flandre vive dentro da Mansão do Diabo Escarlate, geralmente em áreas isoladas, passando grande parte do tempo sozinha.
+</p>
+
+<p><b>Portadora de um poder destrutivo extremo</b></p>
+
+<p>
+Embora não tenha uma ocupação formal, Flandre é uma das entidades mais perigosas de Gensokyo devido às suas habilidades únicas.
+</p>
+
+
+<h2>HABILIDADES</h2>
+
+<p><b>Destruição absoluta</b></p>
+
+<p>
+O poder principal de Flandre é destruir qualquer coisa:
+</p>
+
+<p>
+Ela enxerga o “olho” ou ponto fraco de qualquer objeto ou ser<br>
+Ao apertar esse ponto, pode destruir instantaneamente o alvo<br>
+Esse poder funciona em qualquer coisa, física ou abstrata
+</p>
+
+<p>
+É uma habilidade considerada uma das mais perigosas de Gensokyo.
+</p>
+
+<p><b>Força e velocidade sobrenaturais</b></p>
+
+<p>
+Como vampira, Flandre possui:
+</p>
+
+<p>
+Força física enorme<br>
+Velocidade extrema<br>
+Grande resistência
+</p>
+
+<p><b>Manipulação de energia</b></p>
+
+<p>
+Ela pode disparar ataques de energia caóticos e extremamente destrutivos, muitas vezes sem controle total.
+</p>
+
+<p><b>Voo</b></p>
+
+<p>
+Flandre pode voar livremente, participando de batalhas aéreas com grande mobilidade.
+</p>
+
+<p>
+Seu poder bruto, combinado com sua instabilidade emocional, faz dela uma das personagens mais perigosas de Gensokyo.
+</p>
+    <h2>SPEALL CARDS</h2>
+
+    <video controls height="200px" src="../video.Spell/spellcard29.mp4"></video>  
+    <video controls height="200px" src="../video.Spell/spellcard30.mp4"></video>
+    <video controls height="200px" src="../video.Spell/Spellcard31.mp4"></video>
+    <video controls height="200px" src="../video.Spell/Spellcard32.mp4"></video>
+  </div>
+
+  
+  <div class="descricao">
+
+    <div class="nome">
+      <h1>Flandre Scarlet</h1>
+    </div>
+
+    <div class="versao">
+  <button class="ativar" data-img="../img/img.personagem/img.flandre/flandreth6.png">th6</button>
+  <button data-img="../img/img.personagem/img.flandre/flandreth17,5.png">th17,5</button>
+  </div>
+
+    <div class="content" id="Flandre-img">
+      <img src="../img/img.personagem/img.flandre/flandreth6.png" alt="Flandre Scarlet">
+    </div>
+
+    <div class="informacao">
+      <p>Espécie: Vampira</p>
+      <p>Título:Sister of the Devil (Irmã do Diabo)</p>
+    </div>
+
+  </div>
+  <!--BUTÃO PARA MUDAR A IMAGEM-->
+<script>
+  const buttons = document.querySelectorAll('.versao button');
+
+  const imageDisplay = document.querySelector('#Flandre-img img');
+
+  buttons.forEach(button => {
+    button.addEventListener('click', () => {
+    
+      const newImgPath = button.getAttribute('data-img');
+      
+ 
+      imageDisplay.src = newImgPath;
+
+     
+      buttons.forEach(b => b.classList.remove('ativar'));
+      button.classList.add('ativar');
+    });
+  });
+</script>
+</div>
+</body>
+</html>

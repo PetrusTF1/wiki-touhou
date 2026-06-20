@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undefined Fantastic Object</title>
+    <link rel="stylesheet" href="../css/touhou12.css">
+    <link rel="shortcut icon" href="../img/img.cenario/favicon.ico" type="image/x-icon">
+</head>
+<body>
+       <div class="page">
+
+  <div class="texto">
+
+<h1>Touhou 12 – Undefined Fantastic Object</h1>
+
+<p><b>Título:</b> Touhou Seirensen ~ Undefined Fantastic Object</p>
+
+<p>
+  <b>Desenvolvedora:</b> Team Shanghai Alice<br>
+  <b>Criador:</b> ZUN
+</p>
+
+<p><b>Data de lançamento:</b> 15 de agosto de 2009</p>
+
+<p><b>Plataforma:</b> PC (Windows)</p>
+
+<p><b>Gênero:</b> Shoot 'em up (danmaku / bullet hell)</p>
+
+<p>
+  <b>Descrição:</b><br>
+  Touhou 12 é o décimo segundo jogo principal da série Touhou.<br>
+  A história gira em torno de objetos voadores misteriosos que começam
+  a aparecer pelos céus de Gensokyo.<br>
+  Ao coletá-los, descobre-se que eles são fragmentos ligados a um navio
+  lendário selado há muito tempo.
+</p>
+
+<h1>História</h1>
+
+<p>
+  Estranhos objetos semelhantes a discos voadores começam a surgir
+  nos céus de Gensokyo. Esses objetos liberam energia e parecem
+  reagir quando coletados.
+</p>
+
+<p>
+  Reimu Hakurei, Marisa Kirisame e Sanae Kochiya partem para investigar
+  o fenômeno, acreditando que pode se tratar de um novo incidente
+  envolvendo youkais ou forças desconhecidas.
+</p>
+
+<p>
+  Durante a jornada, elas descobrem que os objetos fazem parte do
+  lendário Navio Tesouro Palanquim (Myouren Temple Ship),
+  que estava selado há séculos.
+</p>
+
+<p>
+  A responsável pelos eventos é Byakuren Hijiri, uma poderosa
+  monja youkai que havia sido selada no Makai por humanos
+  que temiam seu poder.
+</p>
+
+<p>
+  Seus seguidores — incluindo Murasa Minamitsu, Ichirin Kumoi
+  e Shou Toramaru — trabalham para libertá-la reunindo os
+  fragmentos espalhados pelo céu.
+</p>
+
+<p>
+  Após a batalha final, Byakuren é libertada e estabelece
+  o Templo Myouren em Gensokyo, promovendo a convivência
+  pacífica entre humanos e youkais.
+</p>
+
+<p>
+  O jogo introduz o sistema de coleta de UFOs coloridos,
+  que concedem bônus especiais e aumentam a pontuação,
+  tornando a mecânica única dentro da série.
+</p>
+
+<h1>Personagens Jogáveis</h1>
+
+<p>
+  <a href="Reimu.html">Reimu Hakurei</a> (sacerdotisa do Santuário Hakurei)
+</p>
+
+<p>
+  <a href="Marisa.html">Marisa Kirisame</a> (maga humana)
+</p>
+
+<p>
+  <a href="Sanae.html">Sanae Kochiya</a> (sacerdotisa do Santuário Moriya)
+</p>
+
+<p>
+  Cada personagem possui diferentes tipos de disparo e opções,
+  alterando o estilo de jogo e os diálogos durante a campanha.
+</p>
+</div>
+
+  <div class="descricao">
+
+    <div class="nome">
+      <h1>boss touhou 12 </h1>
+    </div>
+
+    <div class="versao">
+   <button class="ativar" data-img="../img/img.boss_th12/Nazrin.png">Nazrin</button>
+   <button data-img="../img/img.boss_th12/kogasa.png">Kogasa</button>
+   <button data-img="../img/img.boss_th12/chirinKumoi.png">chirinKumoi</button>
+   <button data-img="../img/img.boss_th12/Murasa.png">Murasa</button>
+   <button data-img="../img/img.boss_th12/Nazrin2.png">Nazrin2</button>
+   <button data-img="../img/img.boss_th12/Shou.png">Shou</button>
+   <button data-img="../img/img.boss_th12/byakuren.png">byakuren</button>
+    <button data-img="../img/img.boss_th12/Nue.png">Nue</button>
+    </div>
+
+   <div class="content" id="boss-img">
+      <img src="../img/img.boss_th12/Nazrin.png" alt="Nazrin">
+    </div>
+
+    <script>
+  const buttons = document.querySelectorAll('.versao button');
+
+  const imageDisplay = document.querySelector('#boss-img img');
+
+  buttons.forEach(button => {
+    button.addEventListener('click', () => {
+    
+      const newImgPath = button.getAttribute('data-img');
+      
+ 
+      imageDisplay.src = newImgPath;
+
+     
+      buttons.forEach(b => b.classList.remove('ativar'));
+      button.classList.add('ativar');
+    });
+  });
+</script>
+</div>
+    
+</body>
+</html> 

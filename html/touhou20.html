@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Mystic Boundary of Gensokyo</title>
+    <link rel="stylesheet" href="../css/touhou20.css">
+    <link rel="shortcut icon" href="../img/img.cenario/favicon.ico" type="image/x-icon">
+</head>
+<body>
+   <div class="page">
+  <div class="texto">
+
+ <h1>Touhou 20  Mystic Boundary of Gensokyo</h1>
+
+    <p><b>Título:</b> Touhou Genkai Kyoukai ~ Mystic Boundary of Gensokyo</p>
+
+    <p>
+      <b>Desenvolvedora:</b> Team Shanghai Alice<br>
+      <b>Criador:</b> ZUN
+    </p>
+
+    <p><b>Data de lançamento:</b> Desconhecido</p>
+
+    <p><b>Plataforma:</b> PC (Windows)</p>
+
+    <p><b>Gênero:</b> Shoot 'em up (danmaku / bullet hell)</p>
+
+    <p>
+      <b>Descrição:</b><br>
+      Touhou 20 seria o vigésimo jogo principal da série Touhou.<br>
+      A história gira em torno de distorções nas fronteiras de
+      Gensokyo, fazendo com que diferentes mundos comecem a
+      se sobrepor e criar fenômenos estranhos.
+    </p>
+
+    <h1>História</h1>
+
+    <p>
+      Estranhas fissuras começam a aparecer em várias regiões
+      de Gensokyo. Essas rachaduras parecem conectar o mundo
+      humano, o Makai, o Submundo e outros lugares desconhecidos.
+    </p>
+
+    <p>
+      Criaturas e energias de diferentes dimensões passam
+      a atravessar essas fronteiras, causando confusão entre
+      humanos e youkais.
+    </p>
+
+    <p>
+      Reimu Hakurei e Marisa Kirisame partem para investigar
+      o fenômeno, acreditando que alguém está manipulando
+      os limites entre os mundos.
+    </p>
+
+    <p>
+      Durante a jornada, elas encontram uma misteriosa entidade
+      que afirma estar tentando restaurar o equilíbrio das
+      fronteiras, mas seus métodos acabam criando um
+      grande incidente em Gensokyo.
+    </p>
+
+    <p>
+      O jogo introduziria um novo sistema envolvendo
+      “fragmentos de fronteira”, que permitem alterar
+      padrões de ataque e criar efeitos especiais
+      durante as batalhas.
+    </p>
+
+    <h1>Personagens Jogáveis</h1>
+
+    <p>
+      <a href="Reimu.html">Reimu Hakurei</a> (sacerdotisa do Santuário Hakurei)
+    </p>
+
+    <p>
+      <a href="Marisa.html">Marisa Kirisame</a> (maga humana)
+    </p>
+
+    <p>
+      <a href="Sanae.html">Sanae Kochiya</a> (sacerdotisa do Santuário Moriya)
+    </p>
+
+    <p>
+      <a href="Youmu.html">Youmu Konpaku</a> (jardineira do Submundo)
+    </p>
+
+    <p>
+      Cada personagem possuiria diferentes habilidades
+      relacionadas às fronteiras entre os mundos,
+      mudando a forma de enfrentar os inimigos
+      durante a campanha.
+    </p>
+</div>
+
+   <div class="descricao">
+
+    <div class="nome">
+      <h1>boss touhou 17</h1>
+    </div>
+
+    <div class="versao">
+   <button class="ativar" data-img="../img/img.boss_th20/Ubame.png">Ubame</button>
+    <button data-img="../img/img.boss_th20/Chimi.png">Chimi</button>
+   <button data-img="../img/img.boss_th20/Nareko.png">Nareko</button>
+   <button data-img="../img/img.boss_th20/Yuiman.png">Yuiman</button>
+   <button data-img="../img/img.boss_th20/Toyohime.png">Toyohime</button>
+   <button data-img="../img/img.boss_th20/Nina.png">Nina</button>
+   <button data-img="../img/img.boss_th20/Ariya.png">Ariya</button>
+    </div>
+
+   <div class="content" id="boss-img">
+      <img src="../img/img.boss_th20/Ubame.png" alt="Ubame">
+    </div>
+
+    <script>
+  const buttons = document.querySelectorAll('.versao button');
+
+  const imageDisplay = document.querySelector('#boss-img img');
+
+  buttons.forEach(button => {
+    button.addEventListener('click', () => {
+    
+      const newImgPath = button.getAttribute('data-img');
+      
+ 
+      imageDisplay.src = newImgPath;
+
+     
+      buttons.forEach(b => b.classList.remove('ativar'));
+      button.classList.add('ativar');
+    });
+  });
+</script>
+</div>
+
+    
+</body>
+</html>

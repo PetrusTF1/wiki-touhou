@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hidden Star in Four Seasons</title>
+    <link rel="stylesheet" href="../css/touhou16.css">
+    <link rel="shortcut icon" href="../img/img.cenario/favicon.ico" type="image/x-icon">
+</head>
+<body>
+   <div class="page">
+  <div class="texto">
+
+     <h1>Touhou 16 – Hidden Star in Four Seasons</h1>
+
+    <p><b>Título:</b> Touhou Tenkuushou ~ Hidden Star in Four Seasons</p>
+
+    <p>
+      <b>Desenvolvedora:</b> Team Shanghai Alice<br>
+      <b>Criador:</b> ZUN
+    </p>
+
+    <p><b>Data de lançamento:</b> 11 de agosto de 2017</p>
+
+    <p><b>Plataforma:</b> PC (Windows)</p>
+
+    <p><b>Gênero:</b> Shoot 'em up (danmaku / bullet hell)</p>
+
+    <p>
+      <b>Descrição:</b><br>
+      Touhou 16 é o décimo sexto jogo principal da série Touhou.<br>
+      A história gira em torno de um fenômeno climático estranho,
+      onde as quatro estações do ano começam a aparecer fora de época
+      em diferentes regiões de Gensokyo.<br>
+      Neve no verão, folhas de outono na primavera e flores no inverno
+      passam a surgir sem explicação.
+    </p>
+
+    <h1>História</h1>
+
+    <p>
+      Um incidente climático faz com que as estações do ano
+      se misturem de forma anormal. Partes de Gensokyo passam
+      a exibir características de diferentes épocas simultaneamente.
+    </p>
+
+    <p>
+      Reimu Hakurei, Marisa Kirisame, Aya Shameimaru
+      e Cirno decidem investigar o fenômeno,
+      cada uma buscando entender a origem da anomalia.
+    </p>
+
+    <p>
+      Durante a jornada, elas descobrem que a responsável
+      pelo desequilíbrio é Okina Matara,
+      uma deusa secreta com poder sobre os limites
+      e as estações.
+    </p>
+
+    <p>
+      Okina observa Gensokyo das sombras e decide testar
+      os habitantes através desse incidente,
+      revelando sua influência oculta.
+    </p>
+
+    <p>
+      O jogo introduz o sistema de “Sub Season Release”,
+      permitindo que o jogador utilize o poder das estações
+      para atacar, defender ou liberar ataques especiais.
+    </p>
+
+    <h1>Personagens Jogáveis</h1>
+
+    <p>
+      <a href="Reimu.html">Reimu Hakurei</a> (sacerdotisa do Santuário Hakurei)
+    </p>
+
+    <p>
+      <a href="Marisa.html">Marisa Kirisame</a> (maga humana)
+    </p>
+
+    <p>
+      <a href="Aya.html">Aya Shameimaru</a> (tengu jornalista)
+    </p>
+
+    <p>
+      <a href="Cirno.html">Cirno</a> (fada do gelo)
+    </p>
+
+    <p>
+      Cada personagem pode escolher uma estação secundária,
+      alterando padrões de ataque e estratégias durante a campanha.
+    </p>
+  </div>
+
+
+   <div class="descricao">
+
+    <div class="nome">
+      <h1>boss touhou 15</h1>
+    </div>
+
+    <div class="versao">
+   <button class="ativar" data-img="../img/img.boss_th16/Eternity.png">Eternity</button>
+    <button data-img="../img/img.boss_th16/Nemuno.png">Nemuno</button>
+   <button data-img="../img/img.boss_th7/lilywhite.png">lilywhite</button>
+   <button data-img="../img/img.boss_th16/Aunn.png">Aunn</button>
+   <button data-img="../img/img.boss_th16/Narumi.png">Narumi</button>
+   <button data-img="../img/img.boss_th16/Mai.png">Mai</button>
+   <button data-img="../img/img.boss_th16/Satano.png">Satano</button>
+    <button data-img="../img/img.boss_th16/Okina.png">Okina</button>
+    <button data-img="../img/img.boss_th16/Okina_Ex.png">Okina_Ex</button>
+    </div>
+
+   <div class="content" id="boss-img">
+      <img src="../img/img.boss_th16/Eternity.png" alt="Eternity">
+    </div>
+
+    <script>
+  const buttons = document.querySelectorAll('.versao button');
+
+  const imageDisplay = document.querySelector('#boss-img img');
+
+  buttons.forEach(button => {
+    button.addEventListener('click', () => {
+    
+      const newImgPath = button.getAttribute('data-img');
+      
+ 
+      imageDisplay.src = newImgPath;
+
+     
+      buttons.forEach(b => b.classList.remove('ativar'));
+      button.classList.add('ativar');
+    });
+  });
+</script>
+</div>
+
+    
+</body>
+</html>

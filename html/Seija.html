@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seija</title>
+    <link rel="stylesheet" href="../css/Seija.css">
+    <link rel="shortcut icon" href="../img/img.cenario/favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+    <div class="page">
+
+
+  <div class="texto">
+    <!--INFORMAÇÃO DO PERSONAGEM-->
+<h2>PERSONALIDADE</h2>
+
+<p><b>Seija é frequentemente vista como:</b></p>
+
+Rebelde – ela gosta de contrariar regras, autoridades e expectativas.<br><br>
+
+Contraditória – frequentemente diz ou faz o oposto do que os outros esperam.<br><br>
+
+Provocadora – gosta de causar confusão e irritar as pessoas de propósito.<br><br>
+
+Ela transmite a sensação de alguém caótica, imprevisível e contra tudo e todos.
+
+<p><b>🧠 Pensamento invertido</b></p>
+
+<p>
+Como um amanojaku, Seija naturalmente se opõe a tudo:<br>
+Discorda por natureza<br>
+Gosta de inverter valores e situações<br>
+Acha prazer em contrariar o senso comum<br><br>
+
+Para ela, ir contra é quase um instinto.
+</p>
+
+<p><b>😈 Espírito de rebeldia</b></p>
+
+<p>
+Seija tem um forte desejo de desafiar a ordem estabelecida:<br><br>
+
+Não gosta de autoridades ou regras<br>
+Apoia causas caóticas ou revolucionárias<br>
+Age contra qualquer sistema dominante<br><br>
+
+Ela não busca justiça — apenas a inversão do poder.
+</p>
+
+<p><b>🎭 Comportamento manipulador</b></p>
+
+<p>
+Seija pode ser bastante manipuladora:<br><br>
+
+Tenta convencer outros a agir contra si mesmos<br>
+Usa ironia e sarcasmo com frequência<br>
+Não demonstra lealdade real a ninguém<br><br>
+
+Ela prefere usar os outros como ferramentas.
+</p>
+
+<p><b>🤝 Relação com os outros</b></p>
+
+<p>
+Seija raramente forma laços verdadeiros:<br><br>
+
+Vê os outros como alvos ou peças de jogo<br>
+Já colaborou com personagens apenas por interesse<br>
+É desconfiada e não cria vínculos duradouros<br><br>
+
+Sua natureza a impede de confiar ou cooperar plenamente.
+</p>
+
+
+<h2>OCUPAÇÃO</h2>
+
+<p><b>Amanojaku (espírito rebelde)</b></p>
+
+<p>
+Seija é um amanojaku, uma criatura cuja natureza é contrariar tudo e todos.
+Ela age de forma independente, causando distúrbios e conflitos em Gensokyo.
+</p>
+
+<p><b>Instigadora de revoltas</b></p>
+
+<p>
+Ela participou de movimentos para inverter a hierarquia de Gensokyo, incentivando a desordem e tentando derrubar estruturas de poder.
+</p>
+
+
+<h2>HABILIDADES</h2>
+
+<p><b>Inversão</b></p>
+
+<p>
+A habilidade principal de Seija é inverter coisas:
+</p>
+
+<p>
+Virar objetos de cabeça para baixo<br>
+Inverter direções e gravidade<br>
+Confundir percepção espacial<br>
+Criar situações caóticas e imprevisíveis
+</p>
+
+<p>
+Isso torna seus ataques e estratégias extremamente difíceis de prever.
+</p>
+
+<p><b>Uso do Miracle Mallet</b></p>
+
+<p>
+Seija já utilizou o "Milagre Martelo", um artefato capaz de realizar desejos ao custo de distorções na realidade.
+Isso aumentou seu poder temporariamente e ampliou seu potencial de causar caos.
+</p>
+
+<p><b>Mobilidade aérea</b></p>
+
+<p>
+Seija é capaz de voar, permitindo combates aéreos rápidos e imprevisíveis, aproveitando sua habilidade de inverter o espaço ao seu redor.
+</p>
+
+<p>
+Seu estilo de combate é desorientador, caótico e totalmente fora do padrão.
+</p>
+    <h2>SPEALL CARDS</h2>
+
+    <video controls height="200px" src="../video.Spell/Spellcard13.mp4"></video>  
+    <video controls height="200px" src="../video.Spell/Spellcard14.mp4"></video>
+    <video controls height="200px" src="../video.Spell/Spellcard15.mp4"></video>  
+    <video controls height="200px" src="../video.Spell/Spellcard16.mp4"></video>
+  </div>
+
+  
+  <div class="descricao">
+
+    <div class="nome">
+      <h1>Seija Kijin</h1>
+    </div>
+
+    <div class="versao">
+  <button class="ativar" data-img="../img/img.personagem/img.Seija/Seijath14.png">th14</button>
+  <button data-img="../img/img.personagem/img.Seija/Seijath14,3.png">th14,3</button>
+  </div>
+
+    <div class="content" id="Seija-img">
+      <img src="../img/img.personagem/img.seija/seijath14.png" alt="Seija Kijin">
+    </div>
+
+    <div class="informacao">
+      <p>Espécie:Amanojaku</p>
+      <p>Título:The Wicked Hermit</p>
+    </div>
+
+  </div>
+  <!--BUTÃO PARA MUDAR A IMAGEM-->
+<script>
+  const buttons = document.querySelectorAll('.versao button');
+
+  const imageDisplay = document.querySelector('#Seija-img img');
+
+  buttons.forEach(button => {
+    button.addEventListener('click', () => {
+    
+      const newImgPath = button.getAttribute('data-img');
+      
+ 
+      imageDisplay.src = newImgPath;
+
+     
+      buttons.forEach(b => b.classList.remove('ativar'));
+      button.classList.add('ativar');
+    });
+  });
+</script>
+</div>
+    
+</body>
+</html>

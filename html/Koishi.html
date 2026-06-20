@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Koishi Komeiji</title>
+  <link rel="stylesheet" href="../css/Koishi.css">
+  <link rel="shortcut icon" href="../img/img.cenario/favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+<div class="page">
+
+
+  <div class="texto">
+        <!--INFORMAÇÃO DO PERSONAGEM-->
+
+ <h2>PERSONALIDADE</h2> <p><b>Koishi é frequentemente vista como:</b></p>
+
+Desconectada e imprevisível – ela age sem seguir lógica aparente, como se fosse guiada apenas por impulsos.<br><br>
+
+Inocente e espontânea – demonstra curiosidade infantil e uma alegria leve, mesmo em situações estranhas.<br><br>
+
+Assustadora de forma sutil – sua falta de presença consciente faz com que apareça e desapareça de forma inesperada.<br><br>
+
+Ela transmite a sensação de alguém livre de pensamentos, mas ao mesmo tempo profundamente misteriosa.
+
+<p><b>🧠 Consciência e percepção</b></p> <p> Koishi é a youkai do subconsciente:<br> Age sem pensar conscientemente<br> Não é percebida facilmente pelas outras pessoas<br> Toma decisões puramente instintivas<br><br>
+
+Ela existe fora da mente consciente — por isso, é difícil prever ou entender suas ações.
+
+</p> <p><b>🎈 Comportamento livre e imprevisível</b></p> <p> Koishi possui um jeito totalmente despreocupado:<br><br>
+
+Anda por onde quer, sem destino<br>
+Interage com os outros de forma repentina<br>
+Pode desaparecer no meio de uma conversa<br><br>
+
+Ela vive no momento, sem se prender ao passado ou ao futuro.
+
+</p> <p><b>🌌 Natureza vazia e melancólica</b></p> <p> Apesar de sua leveza, Koishi carrega um aspecto profundo:<br><br>
+
+Fechou o próprio terceiro olho para parar de ouvir pensamentos alheios<br>
+Perdeu parte de sua identidade consciente<br>
+Carrega uma solidão silenciosa e invisível<br><br>
+
+Sua personalidade mistura liberdade, vazio e um toque de tristeza silenciosa.
+
+</p> <p><b>👁 Relação com os outros</b></p> <p> Koishi se relaciona de maneira única com os demais personagens:<br><br>
+
+As pessoas muitas vezes não percebem sua presença<br>
+Se aproxima dos outros sem ser notada<br>
+Possui um laço profundo com sua irmã Satori Komeiji<br><br>
+
+Mesmo sendo esquecida facilmente, ela deixa impressões marcantes.
+
+</p> <h2>OCUPAÇÃO</h2> <p><b>Youkai do Subconsciente</b></p> <p> Koishi vive no Palácio dos Espíritos da Terra, mas passa a maior parte do tempo vagando livremente por Gensokyo, sem objetivos definidos. Ela representa o inconsciente e tudo aquilo que não é percebido pela mente. </p> <p><b>Habitante errante de Gensokyo</b></p> <p> Diferente de outros youkais, Koishi não possui deveres formais. Ela simplesmente explora o mundo, surgindo e desaparecendo onde menos se espera. </p> <h2>HABILIDADES</h2> <p><b>Manipulação do inconsciente</b></p> <p> O poder central de Koishi é controlar o subconsciente: </p> <p> Pode apagar sua própria presença da percepção dos outros<br> Induzir ações instintivas em quem a cerca<br> Agir sem ser detectada<br> Ignorar completamente a consciência e lógica </p> <p> Esse poder a torna praticamente impossível de rastrear ou prever. </p> <p><b>Invisibilidade mental</b></p> <p> Koishi não se torna invisível fisicamente — ela se torna imperceptível à mente. As pessoas simplesmente deixam de notar que ela está ali. </p> <p><b>Movimento livre e imprevisível</b></p> <p> Ela pode surgir em qualquer lugar, atravessar ambientes e desaparecer sem deixar vestígios, como um reflexo do próprio subconsciente. </p> <p> Koishi é, essencialmente, a personificação daquilo que ninguém percebe. </p>
+
+    <h2>SPEALL CARDS</h2>
+
+    <video controls height="200px" src="../video.Spell/Spellcard41.mp4"></video>  
+
+    <video controls height="200px" src="../video.Spell/Spellcard42.mp4"></video>
+
+    <video controls height="200px" src="../video.Spell/Spellcard43.mp4"></video>
+
+    <video controls height="200px" src="../video.Spell/Spellcard44.mp4"></video>
+
+
+  </div>
+
+  
+  <div class="descricao">
+
+    <div class="nome">
+      <h1>Koishi Komeiji</h1>
+    </div>
+
+    <div class="versao">
+  <button class="ativar" data-img="../img/img.personagem/img.Koishi/koishith11.png">th11</button>
+  <button data-img="../img/img.personagem/img.Koishi/koishith15,5.png">th15.5</button>
+  </div>
+
+    <div class="content" id="Koishi-img">
+      <img src="../img/img.personagem/img.Koishi/koishith11.png" alt="Koishi Komeiji">
+    </div>
+
+    <div class="informacao">
+      <p>Espécie: Youkai</p>
+      <p>Título: A garota fechada de coração (Closed-hearted girl / 心閉ざした少女)</p>
+    </div>
+
+  </div>
+  <!--BUTÃO PARA MUDAR A IMAGEM-->
+<script>
+  const buttons = document.querySelectorAll('.versao button');
+
+  const imageDisplay = document.querySelector('#Koishi-img img');
+
+  buttons.forEach(button => {
+    button.addEventListener('click', () => {
+    
+      const newImgPath = button.getAttribute('data-img');
+      
+ 
+      imageDisplay.src = newImgPath;
+
+     
+      buttons.forEach(b => b.classList.remove('ativar'));
+      button.classList.add('ativar');
+    });
+  });
+</script>
+</div>
+
+
+</body>
+</html>

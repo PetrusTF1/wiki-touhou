@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Double Dealing Character</title>
+    <link rel="stylesheet" href="../css/touhou15.css">
+    <link rel="shortcut icon" href="../img/img.cenario/favicon.ico" type="image/x-icon">
+</head>
+<body>
+   <div class="page">
+  <div class="texto">
+
+    <h1>Touhou 15 – Legacy of Lunatic Kingdom</h1>
+
+    <p><b>Título:</b> Touhou Kanjuden ~ Legacy of Lunatic Kingdom</p>
+
+    <p>
+      <b>Desenvolvedora:</b> Team Shanghai Alice<br>
+      <b>Criador:</b> ZUN
+    </p>
+
+    <p><b>Data de lançamento:</b> 14 de agosto de 2015</p>
+
+    <p><b>Plataforma:</b> PC (Windows)</p>
+
+    <p><b>Gênero:</b> Shoot 'em up (danmaku / bullet hell)</p>
+
+    <p>
+      <b>Descrição:</b><br>
+      Touhou 15 é o décimo quinto jogo principal da série Touhou.<br>
+      A história gira em torno de uma ameaça vinda da Lua,
+      envolvendo o Reino Lunar e um plano de invasão à Terra.<br>
+      O incidente coloca Gensokyo em perigo sob uma atmosfera
+      estranhamente purificada.
+    </p>
+
+    <h1>História</h1>
+
+    <p>
+      A atmosfera da Terra começa a ser purificada de forma anormal,
+      tornando o ambiente hostil para humanos e youkais.
+      O fenômeno está ligado ao Reino Lunar.
+    </p>
+
+    <p>
+      Reimu Hakurei, Marisa Kirisame, Sanae Kochiya e Reisen Udongein Inaba
+      partem para investigar o ocorrido e confrontar os responsáveis.
+    </p>
+
+    <p>
+      Elas descobrem que Junko, uma entidade movida por ódio puro,
+      está liderando um ataque contra a Capital Lunar como forma
+      de vingança.
+    </p>
+
+    <p>
+      Com o apoio de Hecatia Lapislazuli, uma misteriosa deusa
+      associada ao Inferno e à Lua, o conflito se intensifica,
+      levando as protagonistas até a própria Capital Lunar.
+    </p>
+
+    <p>
+      O jogo apresenta um dos níveis de dificuldade mais altos
+      da série, com padrões extremamente densos de projéteis.
+    </p>
+
+    <p>
+      É introduzido o sistema “Pointdevice Mode”, que permite
+      reiniciar imediatamente após ser atingido, focando em
+      superação de desafios em vez de vidas limitadas.
+    </p>
+
+    <h1>Personagens Jogáveis</h1>
+
+    <p>
+      <a href="Reimu.html">Reimu Hakurei</a> (sacerdotisa do Santuário Hakurei)
+    </p>
+
+    <p>
+      <a href="Marisa.html">Marisa Kirisame</a> (maga humana)
+    </p>
+
+    <p>
+      <a href="Sanae.html">Sanae Kochiya</a> (sacerdotisa do Santuário Moriya)
+    </p>
+
+    <p>
+      <a href="Reisen.html">Reisen Udongein Inaba</a> (coelha lunar do Eientei)
+    </p>
+
+    <p>
+      Cada personagem possui diferentes tipos de disparo e modos
+      que influenciam diretamente a dificuldade e a estratégia
+      durante a campanha.
+    </p>
+
+  </div>
+
+
+   <div class="descricao">
+
+    <div class="nome">
+      <h1>boss touhou 15</h1>
+    </div>
+
+    <div class="versao">
+   <button class="ativar" data-img="../img/img.boss_th15/Seiran.png">Seiran</button>
+   <button data-img="../img/img.boss_th15/Ringo.png">Ringo</button>
+   <button data-img="../img/img.boss_th15/Doremy.png">Doremy</button>
+   <button data-img="../img/img.boss_th15/Sagume.png">Sagume</button>
+   <button data-img="../img/img.boss_th15/Clownpiece.png">Clownpiece</button>
+   <button data-img="../img/img.boss_th15/Junko.png">Junko</button>
+   <button data-img="../img/img.boss_th15/Hecatia.png">Hecatia</button>
+    </div>
+
+   <div class="content" id="boss-img">
+      <img src="../img/img.boss_th15/Seiran.png" alt="Seiran">
+    </div>
+
+    <script>
+  const buttons = document.querySelectorAll('.versao button');
+
+  const imageDisplay = document.querySelector('#boss-img img');
+
+  buttons.forEach(button => {
+    button.addEventListener('click', () => {
+    
+      const newImgPath = button.getAttribute('data-img');
+      
+ 
+      imageDisplay.src = newImgPath;
+
+     
+      buttons.forEach(b => b.classList.remove('ativar'));
+      button.classList.add('ativar');
+    });
+  });
+</script>
+</div>
+
+    
+</body>
+</html>

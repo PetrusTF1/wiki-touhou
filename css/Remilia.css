@@ -1,0 +1,131 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url(../img/img.cenario/cenario14.png);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-color: #0b0b14;
+  color: #fff1f3;
+  margin: 0;
+}
+
+/* layout principal */
+.page {
+  display: flex;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 0 20px;
+  align-items: flex-start;
+}
+
+/* texto principal */
+.texto {
+  flex: 2;
+  line-height: 1.7;
+  text-align: left;
+  background: #1a0006 ;
+  border: solid #ff4d6d;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+/* card lateral */
+.descricao {
+  flex: 1;
+  width: 360px;
+  background: rgba(30, 0, 10, 0.88);
+  border-radius: 10px;
+  overflow: hidden;
+  position: sticky;
+  top: 20px;
+  box-shadow: 0 0 25px rgba(193, 18, 31, 0.5);
+  backdrop-filter: blur(4px);
+}
+
+/* nome */
+.nome {
+  background: linear-gradient(90deg, #6a040f, #ff4d6d);
+  text-align: center;
+  padding: 14px;
+}
+
+.nome h1 {
+  font-size: 16px;
+  margin: 0;
+  color: #ffffff;
+  letter-spacing: 1px;
+}
+
+/* botões */
+.versao {
+  display: flex;
+}
+
+.versao button {
+  flex: 1;
+  padding: 9px;
+  background: #1a0006;
+  border: none;
+  color: #ffd6db;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.versao button:hover {
+  background: #6a040f;
+}
+
+.versao button.ativar {
+  color: #ffd166;
+  border-bottom: 2px solid #ffd166;
+  background: #120004;
+}
+
+/* imagem */
+.content {
+  background: transparent;
+  padding: 15px;
+  text-align: center;
+}
+
+.content img {
+  width: 100%;
+  display: block;
+  border-radius: 6px;
+  box-shadow: 0 0 15px rgba(255, 50, 70, 0.6);
+}
+
+/* infos */
+.informacao {
+  background: rgba(80, 0, 20, 0.9);
+  padding: 12px;
+  color: #fff1f3;
+  border-top: 1px solid #ff4d6d;
+  font-size: 14px;
+}
+
+/* títulos do texto */
+.texto h2 {
+  color: #ff4d6d;
+  border-left: 5px solid #6a040f;
+  padding-left: 10px;
+  margin-top: 25px;
+}
+
+/* destaques */
+.texto b {
+  color: #ffd166;
+}
+
+/* responsivo */
+@media (max-width: 900px) {
+  .page {
+    flex-direction: column;
+  }
+
+  .descricao {
+    position: static;
+    width: 100%;
+  }
+}

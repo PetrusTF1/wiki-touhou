@@ -1,0 +1,113 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url(../img/img.cenario/cenario15.png);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; 
+  background-color: #0b1220;
+  color: #e5e7eb;
+  margin: 0;
+}
+
+.page {
+  display: flex;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 0 20px;
+  align-items: flex-start;
+}
+
+.texto {
+  flex: 2;
+  line-height: 1.6;
+  text-align: left;
+  background: #0f172a;
+  border: #60a5fa solid;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+/* Caixa lateral */
+.descricao {
+  flex: 1;
+  width: 360px;
+  background: #1e293b;
+  border-radius: 8px;
+  overflow: hidden; 
+  position: sticky;
+  top: 20px;
+  box-shadow: 0 0 25px rgba(0,0,0,0.6);
+}
+
+/* Nome */
+.nome {
+  background: #334155;
+  text-align: center;
+  padding: 12px;
+  border-bottom: 1px solid #475569;
+}
+
+.nome h1 {
+  font-size: 16px;
+  margin: 0;
+  color: #f8fafc;
+}
+
+/* Botões de versão */
+.versao {
+  display: flex;
+}
+
+.versao button {
+  flex: 1;
+  padding: 8px;
+  background: #0f172a;
+  border: none;
+  color: #cbd5f5;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.versao button:hover {
+  background: #1e293b;
+  color: #93c5fd;
+}
+
+.versao button.ativar {
+  color: #60a5fa;
+  border-bottom: 2px solid #60a5fa;
+  background: #020617;
+}
+
+/* Conteúdo */
+.content {
+  background: transparent;
+  padding: 15px;
+  text-align: center;
+}
+
+.content img {
+  width: 100%;
+  display: block;
+}
+
+/* Caixa de info */
+.informacao {
+  background: #0f172a;
+  padding: 10px;
+  color: #dbeafe;
+  border-top: 1px solid #334155;
+}
+
+/* Responsivo */
+@media (max-width: 900px) {
+  .page {
+    flex-direction: column;
+  }
+
+  .descricao {
+    position: static;
+    width: 100%;
+  }
+}

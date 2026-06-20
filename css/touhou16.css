@@ -1,0 +1,113 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url(../img/img.boss_th16/background.png);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-color: #0e1a1a;
+  color: #f4fff9;
+  margin: 0;
+}
+
+/* LAYOUT PRINCIPAL */
+.page {
+  display: flex;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 0 20px;
+  align-items: flex-start;
+}
+
+/* TEXTO PRINCIPAL */
+.texto {
+  flex: 2;
+  line-height: 1.6;
+  text-align: left;
+  background: rgba(25, 60, 50, 0.65);
+  padding: 20px;
+  border-radius: 12px;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 0 25px rgba(120, 255, 180, 0.35);
+  border: 1px solid rgba(180, 255, 220, 0.35);
+}
+
+/* CARD LATERAL */
+.descricao {
+  flex: 1;
+  width: 360px;
+  background: linear-gradient(180deg, #5fd19a, #3b6dd1);
+  border-radius: 12px;
+  overflow: hidden;
+  position: sticky;
+  top: 20px;
+  box-shadow: 0 0 30px rgba(120, 200, 255, 0.4);
+}
+
+/* NOME */
+.nome {
+  background: linear-gradient(90deg, #ff9bd6, #ffd27f, #8bffb0, #8ec9ff);
+  text-align: center;
+  padding: 12px;
+}
+
+.nome h1 {
+  font-size: 18px;
+  margin: 0;
+  color: #ffffff;
+  text-shadow: 0 0 10px rgba(255,255,255,0.8);
+}
+
+/* BOTÕES */
+.versao {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.versao button {
+  flex: 1 1 50%;
+  padding: 8px;
+  background: #1b3f36;
+  border: none;
+  color: #f4fff9;
+  cursor: pointer;
+  transition: 0.2s;
+  font-weight: bold;
+}
+
+.versao button:hover {
+  background: #5fd19a;
+  color: #0e1a1a;
+}
+
+.versao button.ativar {
+  border-bottom: 2px solid #ffffff;
+  background: #3b6dd1;
+}
+
+/* CONTEÚDO */
+.content {
+  background: rgba(20, 45, 40, 0.9);
+  padding: 15px;
+  text-align: center;
+}
+
+.content img {
+  width: 100%;
+  display: block;
+  border-radius: 6px;
+  box-shadow: 0 0 25px rgba(150, 255, 220, 0.6);
+  border: 2px solid rgba(220, 255, 240, 0.7);
+}
+
+/* RESPONSIVO */
+@media (max-width: 900px) {
+  .page {
+    flex-direction: column;
+  }
+
+  .descricao {
+    position: static;
+    width: 100%;
+  }
+}

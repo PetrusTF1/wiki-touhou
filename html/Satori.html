@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Satori Komeiji</title>
+  <link rel="stylesheet" href="../css/Satori.css">
+  <link rel="shortcut icon" href="../img/img.cenario/favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+<div class="page">
+
+
+  <div class="texto">
+
+  <h2>PERSONALIDADE</h2>
+    <!--INFORMAÇÃO DO PERSONAGEM-->
+<p><b>Satori é frequentemente vista como:</b></p>
+
+Reservada e distante – ela mantém uma postura calma e evita interações desnecessárias.<br><br>
+
+Séria e introspectiva – raramente demonstra emoções abertamente, preferindo observar em silêncio.<br><br>
+
+Melancólica – carrega um ar triste por causa da forma como é tratada pelos outros.<br><br>
+
+Ela transmite a sensação de alguém solitária, mas profundamente consciente do mundo ao seu redor.
+
+<p><b>🧠 Consciência e percepção</b></p>
+
+<p>
+Satori possui uma percepção única das pessoas:<br>
+Lê pensamentos automaticamente<br>
+Entende intenções ocultas<br>
+Percebe emoções verdadeiras<br><br>
+
+Nada escapa da mente dela.
+</p>
+
+<p><b>😶 Isolamento emocional</b></p>
+
+<p>
+Seu poder faz com que ela se afaste dos outros:<br><br>
+
+As pessoas têm medo dela<br>
+Ela evita contato social<br>
+Prefere viver isolada no Subterrâneo<br><br>
+
+Isso reforça sua solidão constante.
+</p>
+
+<p><b>💔 Natureza gentil escondida</b></p>
+
+<p>
+Apesar de sua aparência fria, Satori não é cruel:<br><br>
+
+Se preocupa com seus animais de estimação<br>
+Protege quem vive com ela<br>
+Demonstra cuidado de forma silenciosa<br><br>
+
+Seu afeto é sutil, mas real.
+</p>
+
+<p><b>👥 Relação com os outros</b></p>
+
+<p>
+Suas relações são complicadas:<br><br>
+
+Tem laços fortes com sua irmã Koishi Komeiji<br>
+É temida por humanos e youkai<br>
+Mantém distância por saber o que os outros pensam<br><br>
+
+Ela prefere a verdade, mesmo que doa.
+</p>
+
+
+<h2>OCUPAÇÃO</h2>
+
+<p><b>Guardião do Palácio dos Espíritos da Terra</b></p>
+
+<p>
+Satori governa o Palácio dos Espíritos da Terra no Subterrâneo, supervisionando criaturas perigosas e mantendo a ordem.
+</p>
+
+<p><b>Cuidadora de animais do Subterrâneo</b></p>
+
+<p>
+Ela também cuida de diversos youkai e animais subterrâneos, tratando-os com atenção e responsabilidade.
+</p>
+
+
+<h2>HABILIDADES</h2>
+
+<p><b>Leitura de mentes</b></p>
+
+<p>
+O poder central de Satori é ler pensamentos:
+</p>
+
+<p>
+Lê a mente de qualquer pessoa próxima<br>
+Revela intenções escondidas<br>
+Copia habilidades baseadas na memória do oponente<br>
+Usa ataques baseados nos medos dos inimigos
+</p>
+
+<p><b>Controle de espíritos</b></p>
+
+<p>
+Ela consegue controlar e comandar espíritos e criaturas do Subterrâneo, mantendo-os sob sua autoridade.
+</p>
+
+<p><b>Voo e combate danmaku</b></p>
+
+<p>
+Satori pode voar e lutar usando padrões de danmaku baseados em memórias e emoções.
+</p>
+
+<p>
+Seu poder mental faz dela uma oponente extremamente imprevisível.
+</p>
+
+    <h2>SPEALL CARDS</h2>
+
+    <video controls height="200px" src="../video.Spell/Spellcard53.mp4"></video>  
+    <video controls height="200px" src="../video.Spell/Spellcard54.mp4"></video>
+    <video controls height="200px" src="../video.Spell/Spellcard55.mp4"></video>
+    <video controls height="200px" src="../video.Spell/Spellcard56.mp4"></video>
+  </div>
+
+  
+  <div class="descricao">
+
+    <div class="nome">
+      <h1>Satori Komeiji</h1>
+    </div>
+
+    <div class="versao">
+  <button class="ativar" data-img="../img/img.personagem/img.satori/satorith11.png">th11</button>
+  </div>
+
+    <div class="content" id="Satori-img">
+      <img src="../img/img.personagem/img.satori/satorith11.png" alt="Satori Komeiji">
+    </div>
+
+    <div class="informacao">
+      <p>Espécie: Youkai</p>
+      <p>Título: The Girl Even The Vengeful Spirits Fear (A Garota que Até os Espíritos Vingativos Temem)</p>
+    </div>
+
+  </div>
+  <!--BUTÃO PARA MUDAR A IMAGEM-->
+<script>
+  const buttons = document.querySelectorAll('.versao button');
+
+  const imageDisplay = document.querySelector('#Satori-img img');
+
+  buttons.forEach(button => {
+    button.addEventListener('click', () => {
+    
+      const newImgPath = button.getAttribute('data-img');
+      
+ 
+      imageDisplay.src = newImgPath;
+
+     
+      buttons.forEach(b => b.classList.remove('ativar'));
+      button.classList.add('ativar');
+    });
+  });
+</script>
+</div>
+
+
+</body>
+</html>

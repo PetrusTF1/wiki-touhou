@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subterranean Animism</title>
+    <link rel="stylesheet" href="../css/touhou11.css">
+    <link rel="shortcut icon" href="../img/img.cenario/favicon.ico" type="image/x-icon">
+</head>
+<body>
+       <div class="page">
+
+  <div class="texto">
+
+  <h1>Touhou 11 – Subterranean Animism</h1>
+
+  <p><b>Título:</b> Touhou Chireiden ~ Subterranean Animism</p>
+
+  <p>
+    <b>Desenvolvedora:</b> Team Shanghai Alice<br>
+    <b>Criador:</b> ZUN
+  </p>
+
+  <p><b>Data de lançamento:</b> 16 de agosto de 2008</p>
+
+  <p><b>Plataforma:</b> PC (Windows)</p>
+
+  <p><b>Gênero:</b> Shoot 'em up (danmaku / bullet hell)</p>
+
+  <p>
+    <b>Descrição:</b><br>
+    Touhou 11 é o décimo primeiro jogo principal da série Touhou e se passa nas
+    profundezas do Subterrâneo de Gensokyo.<br>
+    Após o surgimento de gêiseres misteriosos e espíritos vingativos na superfície,
+    Reimu Hakurei e Marisa Kirisame descem ao Antigo Inferno para investigar a causa do incidente.
+  </p>
+
+  <h1>História</h1>
+
+  <p>
+    Um dia, gêiseres começam a surgir perto do Santuário Hakurei, liberando
+    espíritos vingativos na superfície de Gensokyo. A origem do fenômeno
+    parece vir do Subterrâneo, uma região isolada onde antigos youkais
+    e espíritos perigosos foram selados.
+  </p>
+
+  <p>
+    Reimu Hakurei e Marisa Kirisame partem para investigar, recebendo apoio
+    espiritual de youkais da superfície durante a jornada.
+  </p>
+
+  <p>
+    Ao descerem até as profundezas do Antigo Inferno, elas descobrem que a
+    responsável pelo incidente é Utsuho Reiuji, uma corvo do inferno que
+    adquiriu o poder do Yatagarasu, concedendo-lhe controle sobre energia nuclear.
+  </p>
+
+  <p>
+    Influenciada por Kanako Yasaka, que desejava uma nova fonte de energia
+    para o Santuário Moriya, Utsuho planejava usar seu poder para recriar
+    o inferno na superfície.
+  </p>
+
+  <p>
+    Após ser derrotada, o plano é interrompido e o incidente é resolvido.
+    O Subterrâneo permanece isolado, mas novas conexões entre a superfície
+    e o mundo subterrâneo são estabelecidas.
+  </p>
+
+  <p>
+    O jogo é conhecido por sua dificuldade elevada e por introduzir
+    personagens importantes do Subterrâneo na série.
+  </p>
+
+  <h1>Personagens Jogáveis</h1>
+
+  <p>
+    <a href="Reimu.html">Reimu Hakurei</a> (sacerdotisa do Santuário Hakurei)
+  </p>
+
+  <p>
+    <a href="Marisa.html">Marisa Kirisame</a> (maga humana)
+  </p>
+
+  <p>
+    Cada personagem pode escolher um parceiro youkai para receber suporte
+    especial durante o jogo, alterando habilidades e diálogos ao longo da história.
+  </p>
+</div>
+
+  <div class="descricao">
+
+    <div class="nome">
+      <h1>boss touhou 11 </h1>
+    </div>
+
+    <div class="versao">
+   <button class="ativar" data-img="../img/img.boss_th11/kisume.png">Kisume</button>
+   <button data-img="../img/img.boss_th11/Yamame.png"> Yamame</button>
+   <button data-img="../img/img.boss_th11/Parsee.png">Parsee </button>
+   <button data-img="../img/img.boss_th11/Yuugi.png">Yuugi</button>
+   <button data-img="../img/img.boss_th11/Satori.png">Satori</button>
+   <button data-img="../img/img.boss_th11/Rin.png">Rin</button>
+   <button data-img="../img/img.boss_th11/Utsuho.png">Utsuho</button>
+      <button data-img="../img/img.boss_th11/Koishi.png">Koishi</button>
+    </div>
+
+   <div class="content" id="boss-img">
+      <img src="../img/img.boss_th11/Kisume.png" alt="Kisume">
+    </div>
+
+    <script>
+  const buttons = document.querySelectorAll('.versao button');
+
+  const imageDisplay = document.querySelector('#boss-img img');
+
+  buttons.forEach(button => {
+    button.addEventListener('click', () => {
+    
+      const newImgPath = button.getAttribute('data-img');
+      
+ 
+      imageDisplay.src = newImgPath;
+
+     
+      buttons.forEach(b => b.classList.remove('ativar'));
+      button.classList.add('ativar');
+    });
+  });
+</script>
+</div>
+    
+</body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Double Dealing Character</title>
+    <link rel="stylesheet" href="../css/touhou14.css">
+    <link rel="shortcut icon" href="../img/img.cenario/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="page">
+  <div class="texto">
+
+    <h1>Touhou 14 – Double Dealing Character</h1>
+
+    <p><b>Título:</b> Touhou Kishinjou ~ Double Dealing Character</p>
+
+    <p>
+      <b>Desenvolvedora:</b> Team Shanghai Alice<br>
+      <b>Criador:</b> ZUN
+    </p>
+
+    <p><b>Data de lançamento:</b> 12 de agosto de 2013</p>
+
+    <p><b>Plataforma:</b> PC (Windows)</p>
+
+    <p><b>Gênero:</b> Shoot 'em up (danmaku / bullet hell)</p>
+
+    <p>
+      <b>Descrição:</b><br>
+      Touhou 14 é o décimo quarto jogo principal da série Touhou.<br>
+      A história gira em torno de objetos que começam a agir por conta própria,
+      como se tivessem ganhado consciência.<br>
+      Armas, ferramentas e até itens comuns passam a se rebelar contra seus donos.
+    </p>
+
+    <h1>História</h1>
+
+    <p>
+      Estranhos acontecimentos começam quando armas e utensílios
+      despertam misteriosamente, movidos por uma energia desconhecida.
+    </p>
+
+    <p>
+      Reimu Hakurei, Marisa Kirisame e Sakuya Izayoi partem
+      para investigar o incidente, já que até mesmo seus próprios
+      equipamentos começam a agir de forma estranha.
+    </p>
+
+    <p>
+      Durante a jornada, elas descobrem que o poder por trás
+      dos eventos vem do lendário Martelo Mágico,
+      um artefato capaz de conceder desejos.
+    </p>
+
+    <p>
+      A responsável pela rebelião é Seija Kijin,
+      uma amanojaku que deseja inverter a ordem natural
+      e criar um mundo onde os fracos dominem os fortes.
+    </p>
+
+    <p>
+      Ela utiliza o poder do martelo junto com Shinmyoumaru Sukuna,
+      uma pequena princesa descendente do povo dos polegares,
+      para transformar ferramentas em tsukumogami.
+    </p>
+
+    <p>
+      Após a batalha final, o poder do martelo é contido,
+      e a revolta dos objetos chega ao fim,
+      restaurando o equilíbrio em Gensokyo.
+    </p>
+
+    <p>
+      O jogo introduz o sistema de armas possuídas,
+      onde diferentes equipamentos oferecem vantagens
+      e alteram o estilo de disparo durante a campanha.
+    </p>
+
+    <h1>Personagens Jogáveis</h1>
+
+    <p>
+      <a href="Reimu.html">Reimu Hakurei</a> (sacerdotisa do Santuário Hakurei)
+    </p>
+
+    <p>
+      <a href="Marisa.html">Marisa Kirisame</a> (maga humana)
+    </p>
+
+    <p>
+      <a href="Sakuya.html">Sakuya Izayoi</a> (empregada da Mansão Scarlet Devil)
+    </p>
+
+    <p>
+      Cada personagem possui diferentes tipos de armas,
+      que influenciam o dano, alcance e comportamento
+      dos disparos durante o jogo.
+    </p>
+
+  </div>
+
+   <div class="descricao">
+
+    <div class="nome">
+      <h1>boss touhou 14</h1>
+    </div>
+
+    <div class="versao">
+   <button class="ativar" data-img="../img/img.boss_th14/Cirno.png">Cirno</button>
+   <button data-img="../img/img.boss_th14/Wakasagihime.png">Wakasagihime</button>
+   <button data-img="../img/img.boss_th14/Sekibanki.png">Sekibanki</button>
+   <button data-img="../img/img.boss_th14/Kagerou.png">Kagerou</button>
+   <button data-img="../img/img.boss_th14/Benben.png">Benben</button>
+   <button data-img="../img/img.boss_th14/Yatsuhashi.png">Yatsuhashi</button>
+   <button data-img="../img/img.boss_th14/Seija.png">Seija</button>
+    <button data-img="../img/img.boss_th14/Sukuna.png">Sukuna</button>  
+    <button data-img="../img/img.boss_th14/Raiko.png">Raiko</button>
+    </div>
+
+   <div class="content" id="boss-img">
+      <img src="../img/img.boss_th14/Cirno.png" alt="Cirno">
+    </div>
+
+    <script>
+  const buttons = document.querySelectorAll('.versao button');
+
+  const imageDisplay = document.querySelector('#boss-img img');
+
+  buttons.forEach(button => {
+    button.addEventListener('click', () => {
+    
+      const newImgPath = button.getAttribute('data-img');
+      
+ 
+      imageDisplay.src = newImgPath;
+
+     
+      buttons.forEach(b => b.classList.remove('ativar'));
+      button.classList.add('ativar');
+    });
+  });
+</script>
+</div>
+    
+</body>
+</html>

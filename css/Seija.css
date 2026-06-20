@@ -1,0 +1,121 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url(../img/img.cenario/cenario28.png);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; 
+  background-color: #0a000a;
+  color: #ffe6ff;
+  margin: 0;
+}
+
+.page {
+  display: flex;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 0 20px;
+  align-items: flex-start;
+}
+
+.texto {
+  flex: 2;
+  line-height: 1.6;
+  text-align: left;
+  background: #0a000a;
+  border: #ff2e63 solid ;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.descricao {
+  flex: 1;
+  width: 360px;
+  background: #1a001a;
+  border-radius: 8px;
+  overflow: hidden; 
+  position: sticky;
+  top: 20px;
+  box-shadow: 0 0 25px rgba(0,0,0,0.8);
+  backdrop-filter: blur(4px);
+}
+
+.nome {
+  background: linear-gradient(90deg, #8b0000, #5a007a);
+  text-align: center;
+  padding: 12px;
+}
+
+.nome h1 {
+  font-size: 16px;
+  margin: 0;
+  color: #ffffff;
+  letter-spacing: 2px;
+}
+
+.versao {
+  display: flex;
+}
+
+.versao button {
+  flex: 1;
+  padding: 8px;
+  background: #120012;
+  border: none;
+  color: #ffb3ff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.versao button:hover {
+  background: #2a002a;
+}
+
+.versao button.ativar {
+  color: #ff2e63;
+  border-bottom: 2px solid #ff2e63;
+  background: #0a000a;
+}
+
+.content {
+  background: transparent;
+  padding: 15px;
+  text-align: center;
+}
+
+.content img {
+  width: 100%;
+  display: block;
+  border-radius: 6px;
+  box-shadow: 0 0 20px rgba(255,46,99,0.4);
+}
+
+.texto h2 {
+  color: #ff2e63;
+  border-left: 5px solid #ff2e63;
+  padding-left: 10px;
+  margin-top: 25px;
+}
+
+.texto b {
+  color: #c77dff;
+}
+
+.informacao {
+  background: #2a002a;
+  padding: 10px;
+  color: #ffd6ff;
+  border-top: 1px solid #ff2e63;
+  font-size: 14px;
+}
+
+@media (max-width: 900px) {
+  .page {
+    flex-direction: column;
+  }
+
+  .descricao {
+    position: static;
+    width: 100%;
+  }
+}

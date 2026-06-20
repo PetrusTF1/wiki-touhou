@@ -1,0 +1,113 @@
+    body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url(../img/img.boss_th17/background.png);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-color: #1a0f12; /* tom escuro animal */
+  color: #ffeaea;
+  margin: 0;
+}
+
+/* LAYOUT PRINCIPAL */
+.page {
+  display: flex;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 0 20px;
+  align-items: flex-start;
+}
+
+/* TEXTO PRINCIPAL */
+.texto {
+  flex: 2;
+  line-height: 1.6;
+  text-align: left;
+  background: rgba(60, 20, 25, 0.65);
+  padding: 20px;
+  border-radius: 12px;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 0 20px rgba(255, 120, 120, 0.3);
+  border: 1px solid rgba(255, 150, 150, 0.3);
+}
+
+/* CARD LATERAL */
+.descricao {
+  flex: 1;
+  width: 360px;
+  background: linear-gradient(180deg, #5a1c1c, #2b0f14);
+  border-radius: 12px;
+  overflow: hidden;
+  position: sticky;
+  top: 20px;
+  box-shadow: 0 0 25px rgba(255, 120, 120, 0.4);
+}
+
+/* NOME */
+.nome {
+  background: linear-gradient(90deg, #ff6a6a, #ff9b4a);
+  text-align: center;
+  padding: 12px;
+}
+
+.nome h1 {
+  font-size: 18px;
+  margin: 0;
+  color: #ffffff;
+  text-shadow: 0 0 10px rgba(255, 200, 200, 0.8);
+}
+
+/* BOTÕES */
+.versao {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.versao button {
+  flex: 1 1 50%;
+  padding: 8px;
+  background: #2b0f14;
+  border: none;
+  color: #ffeaea;
+  cursor: pointer;
+  transition: 0.2s;
+  font-weight: bold;
+}
+
+.versao button:hover {
+  background: #ff6a6a;
+  color: #1a0f12;
+}
+
+.versao button.ativar {
+  border-bottom: 2px solid #ffffff;
+  background: #5a1c1c;
+}
+
+/* CONTEÚDO */
+.content {
+  background: rgba(43, 15, 20, 0.9);
+  padding: 15px;
+  text-align: center;
+}
+
+.content img {
+  width: 100%;
+  display: block;
+  border-radius: 6px;
+  box-shadow: 0 0 18px rgba(255, 140, 140, 0.5);
+  border: 2px solid rgba(255, 200, 200, 0.6);
+}
+
+/* RESPONSIVO */
+@media (max-width: 900px) {
+  .page {
+    flex-direction: column;
+  }
+
+  .descricao {
+    position: static;
+    width: 100%;
+  }
+}

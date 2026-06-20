@@ -1,0 +1,129 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url(../img/img.cenario/cenario21.png);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; 
+  background-color: #1a0000; 
+  color: #fff5f5;
+  margin: 0;
+}
+
+/* layout */
+.page {
+  display: flex;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 0 20px;
+  align-items: flex-start;
+}
+
+.texto {
+  flex: 2;
+  line-height: 1.6;
+  text-align: left;
+  background: #7a0000;
+  border: solid black;
+  border-radius: 10px;
+  padding: 20px;
+
+}
+
+
+.descricao {
+  flex: 1;
+  width: 360px;
+  background: #7a0000;
+  border-radius: 8px;
+  overflow: hidden; 
+  position: sticky;
+  top: 20px;
+  box-shadow: 0 0 25px rgba(255, 0, 0, 0.35);
+}
+
+
+.nome {
+  background: #e60000; 
+  text-align: center;
+  padding: 12px;
+}
+
+.nome h1 {
+  font-size: 16px;
+  margin: 0;
+  color: #ffffff;
+  letter-spacing: 1px;
+}
+
+
+.versao {
+  display: flex;
+}
+
+.versao button {
+  flex: 1;
+  padding: 8px;
+  background: #ffffff;
+  border: none;
+  color: #7a0000;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: bold;
+}
+
+.versao button:hover {
+  background: #ffd6d6;
+}
+
+.versao button.ativar {
+  color: #e60000;
+  border-bottom: 2px solid #e60000;
+  background: #fff5f5;
+}
+
+
+.content {
+  background: transparent;
+  padding: 15px;
+  text-align: center;
+}
+
+.content img {
+  width: 100%;
+  display: block;
+  border-radius: 6px;
+  box-shadow: 0 0 15px rgba(255, 80, 80, 0.5);
+}
+
+
+.informacao {
+  background: #fff5f5; 
+  padding: 10px;
+  color: #7a0000;
+  border-top: 2px solid #e60000;
+}
+
+
+.texto h2 {
+  color: #e60000;
+  border-left: 5px solid #e60000;
+  padding-left: 10px;
+  margin-top: 25px;
+}
+
+.texto b {
+  color: #ff4d4d;
+}
+
+
+@media (max-width: 900px) {
+  .page {
+    flex-direction: column;
+  }
+
+  .descricao {
+    position: static;
+    width: 100%;
+  }
+}

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wily Beast and Weakest Creature</title>
+    <link rel="stylesheet" href="../css/touhou17.css">
+    <link rel="shortcut icon" href="../img/img.cenario/favicon.ico" type="image/x-icon">
+</head>
+<body>
+   <div class="page">
+  <div class="texto">
+
+<h1>Touhou 17 – Wily Beast and Weakest Creature</h1>
+
+<p><b>Título:</b> Touhou Kikeijuu ~ Wily Beast and Weakest Creature</p>
+
+<p>
+  <b>Desenvolvedora:</b> Team Shanghai Alice<br>
+  <b>Criador:</b> ZUN
+</p>
+
+<p><b>Data de lançamento:</b> 12 de agosto de 2019</p>
+
+<p><b>Plataforma:</b> PC (Windows)</p>
+
+<p><b>Gênero:</b> Shoot 'em up (danmaku / bullet hell)</p>
+
+<p>
+  <b>Descrição:</b><br>
+  Touhou 17 é o décimo sétimo jogo principal da série Touhou.<br>
+  A história gira em torno de espíritos animais misteriosos
+  que começam a aparecer em Gensokyo pedindo ajuda.<br>
+  Eles afirmam que o Mundo das Bestas foi dominado por
+  uma poderosa organização que controla os espíritos.
+</p>
+
+<h1>História</h1>
+
+<p>
+  Espíritos animais surgem repentinamente em Gensokyo
+  e procuram humanos capazes de ajudá-los.
+</p>
+
+<p>
+  Reimu Hakurei, Marisa Kirisame e Youmu Konpaku
+  recebem a ajuda desses espíritos e decidem investigar
+  a situação no Mundo das Bestas.
+</p>
+
+<p>
+  Ao chegarem lá, descobrem que três grandes organizações
+  de espíritos animais estão disputando poder e influência.
+</p>
+
+<p>
+  Durante a jornada, as protagonistas enfrentam diversos
+  representantes dessas facções enquanto avançam pelo
+  território hostil.
+</p>
+
+<p>
+  No final da história, elas enfrentam Keiki Haniyasushin,
+  uma deusa que criou um exército de estátuas de haniwa
+  para proteger os espíritos humanos contra os animais.
+</p>
+
+<p>
+  O jogo introduz o sistema de **Espíritos Animais**,
+  que concedem diferentes habilidades temporárias
+  dependendo do tipo de espírito coletado.
+</p>
+
+<h1>Personagens Jogáveis</h1>
+
+<p>
+  <a href="Reimu.html">Reimu Hakurei</a> (sacerdotisa do Santuário Hakurei)
+</p>
+
+<p>
+  <a href="Marisa.html">Marisa Kirisame</a> (maga humana)
+</p>
+
+<p>
+  <a href="Youmu.html">Youmu Konpaku</a> (jardineira do Submundo)
+</p>
+
+<p>
+  Cada personagem pode utilizar diferentes espíritos
+  animais (lobo, lontra ou águia), que alteram
+  o estilo de jogo e os ataques especiais.
+</p>
+</div>
+
+   <div class="descricao">
+
+    <div class="nome">
+      <h1>boss touhou 17</h1>
+    </div>
+
+    <div class="versao">
+   <button class="ativar" data-img="../img/img.boss_th17/Eika.png">Eika</button>
+    <button data-img="../img/img.boss_th17/Urumi.png">Urumi</button>
+   <button data-img="../img/img.boss_th17/Kutaka.png">Kutaka</button>
+   <button data-img="../img/img.boss_th17/Yachie.png">Yachie</button>
+   <button data-img="../img/img.boss_th17/Mayumi.png">Mayumi</button>
+   <button data-img="../img/img.boss_th17/Keiki.png">Keiki</button>
+   <button data-img="../img/img.boss_th17/Saki.png">Saki</button>
+    </div>
+
+   <div class="content" id="boss-img">
+      <img src="../img/img.boss_th17/Eika.png" alt="Eika">
+    </div>
+
+    <script>
+  const buttons = document.querySelectorAll('.versao button');
+
+  const imageDisplay = document.querySelector('#boss-img img');
+
+  buttons.forEach(button => {
+    button.addEventListener('click', () => {
+    
+      const newImgPath = button.getAttribute('data-img');
+      
+ 
+      imageDisplay.src = newImgPath;
+
+     
+      buttons.forEach(b => b.classList.remove('ativar'));
+      button.classList.add('ativar');
+    });
+  });
+</script>
+</div>
+
+    
+</body>
+</html>
