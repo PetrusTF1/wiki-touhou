@@ -1,0 +1,152 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url(../img/img.cenario/background40.png  ); /* Cenário da Floresta de Bambu dos Perdidos / Chamas */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; 
+  background-color: #1a0808; /* Vermelho escuro profundo, quase preto, das chamas da noite */
+  color: #f5f0f0; /* Texto claro (cinza-claro/branco puxado para o cabelo dela) */
+  margin: 0;
+}
+
+/* Layout Principal */
+.page {
+  display: flex;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 0 20px;
+  align-items: flex-start;
+  box-sizing: border-box;
+}
+
+/* Bloco de Texto Principal (Estilo Calças de Ofuda / Chamas Eternas) */
+.texto {
+  flex: 2;
+  line-height: 1.6;
+  text-align: left;
+  background: #240e0e; /* Vermelho queimado escuro místico */
+  border: #c0392b solid 2px; /* Moldura vermelha intensa (cor dos seus talismãs) */
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 15px rgba(230, 126, 34, 0.25); /* Brilho neon laranja suave (as chamas da fênix) */
+}
+
+/* Títulos das seções */
+.texto h2 {
+  color: #e74c3c; /* Vermelho vivo da Mokou */
+  border-left: 5px solid #f39c12; /* Detalhe em laranja brilhante de fogo */
+  padding-left: 10px;
+  margin-top: 25px;
+  letter-spacing: 0.5px;
+}
+
+/* Destaques no texto */
+.texto b {
+  color: #f1c40f; /* Palavras em negrito ganham o tom amarelo/dourado das labaredas intensas */
+}
+
+/* Card Lateral (Ficha de Informações / Guia da Imortalidade) */
+.descricao {
+  flex: 1;
+  width: 100%;
+  max-width: 360px;
+  background: #240e0e; /* Fundo vermelho queimado escuro */
+  border-radius: 8px;
+  overflow: hidden; 
+  position: sticky;
+  top: 20px;
+  box-shadow: 0 0 25px rgba(211, 47, 47, 0.45); /* Glow vermelho do poder da fênix imortal */
+}
+
+/* Nome da Personagem no Topo */
+.nome {
+  background: linear-gradient(90deg, #d32f2f, #e67e22); /* Gradiente do vermelho intenso ao laranja fogo */
+  text-align: center;
+  padding: 12px;
+}
+
+.nome h1 {
+  font-size: 16px;
+  margin: 0;
+  color: #ffffff;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
+}
+
+/* Abas / Botões de Versão (Modos de Ataque / Spell Cards) */
+.versao {
+  display: flex;
+}
+
+.versao button {
+  flex: 1;
+  padding: 10px 8px;
+  background: #3c1414; /* Vermelho intermediário fosco */
+  border: none;
+  color: #bdc3c7; /* Texto acinzentado cor de cinzas */
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.versao button:hover {
+  background: #2a0b0b;
+  color: #f1c40f; /* Transição para o amarelo de fogo no hover */
+}
+
+.versao button.ativar {
+  color: #e74c3c; /* Vermelho ativo quando selecionado */
+  border-bottom: 2px solid #e74c3c;
+  background: #260808; /* Fundo ativo escuro */
+}
+
+/* Conteúdo da Imagem (Ilustração / Spell Card) */
+.content {
+  background: transparent;
+  padding: 15px;
+  text-align: center;
+}
+
+.content img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 6px;
+  box-shadow: 0 0 18px rgba(230, 126, 34, 0.35); /* Brilho aura de chamas puras */
+}
+
+/* Rodapé de Informação (Notas do Elixir de Hourai) */
+.informacao {
+  background: #260808; /* Fundo escuro fogo baixo */
+  padding: 12px 15px;
+  color: #f1c40f; /* Texto em tom amarelo chama viva */
+  border-top: 2px solid #e67e22; /* Divisória em tom de fogo/laranja */
+  font-size: 14px;
+}
+
+/* Responsividade */
+@media (max-width: 900px) {
+  .page {
+    flex-direction: column;
+    margin: 15px auto;
+    gap: 20px;
+  }
+
+  .descricao {
+    position: static;
+    max-width: 100%;
+    order: -1;
+  }
+}
+@media(min-width: 480px){
+  body{
+    font-size: 14px;
+  }
+  .page{
+    padding: 0 10px;
+  }
+  .texto{
+    padding: 15px;
+  }
+}

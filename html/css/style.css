@@ -24,11 +24,7 @@ body {
     z-index: -1;
     object-fit: cover; 
   }
-@media (max-width: 768px) {
-  .menu {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -178,4 +174,29 @@ body {
   margin-top: 10px;
   color: #7ec8ff;
   font-weight: bold;
+}
+/* Responsividade */
+@media (max-width: 900px) {
+  .page {
+    flex-direction: column;
+    margin: 15px auto;
+    gap: 20px;
+  }
+
+  .descricao {
+    position: static;
+    max-width: 100%;
+    order: -1;
+  }
+}
+@media(min-width: 480px){
+  body{
+    font-size: 14px;
+  }
+  .page{
+    padding: 0 10px;
+  }
+  .texto{
+    padding: 15px;
+  }
 }

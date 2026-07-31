@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kaguya Houraisan</title>
+  <link rel="stylesheet" href="./css/Kaguya.css">
+  <link rel="shortcut icon" href="./img/img.cenario/favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+<div class="page">
+
+
+  <div class="texto">
+    <!--INFORMAÇÃO DO PERSONAGEM-->
+<h2>HISTÓRIA</h2>
+
+<p><b>A trajetória de Kaguya é marcada por rebeldia, exílio e imortalidade:</b></p>
+
+<p>
+🌙 A Vida na Capital Lunar – Kaguya era uma das princesas da nobreza da Capital Lunar, uma sociedade de seres puros.<br><br>
+O maior crime – ela ordenou a criação do Elixir de Hourai e o consumiu, tornando-se imortal.<br><br>
+A impureza – aos olhos dos lunares, desafiar o ciclo natural da vida e da morte a tornou um ser impuro.
+</p>
+
+<p>
+Como punição por seu pecado, ela foi banida para o mundo dos humanos, onde foi acolhida por um cortador de bambu.
+</p>
+
+<p><b>🎋 O Exílio na Terra e os Pedidos Impossíveis</b></p>
+
+<p>
+Sua beleza extraordinária logo atraiu pretendentes de toda a nobreza:<br>
+Criou os "Cinco Pedidos Impossíveis" para afastar os homens que a cortejavam<br>
+Humilhou os nobres ao exigir tesouros lendários que ninguém conseguia encontrar<br>
+Despertou o ódio eterno de Fujiwara no Mokou, filha de um dos nobres rejeitados<br><br>
+
+Mokou eventualmente também tomou o elixir, iniciando uma rivalidade violenta que dura até hoje.
+</p>
+
+<p><b>🌲 A Fuga para a Floresta dos Bambus</b></p>
+
+<p>
+Quando o tempo de sua punição acabou, a Lua enviou emissários para resgatá-la:<br><br>
+Kaguya não queria voltar e decidiu fugir<br>
+Eirin Yagokoro traiu a Capital Lunar para protegê-la e ajudá-la na fuga<br><br>
+Juntas, elas se esconderam na densa Floresta dos Bambus do mundo humano<br><br>
+
+Para garantir a segurança, Eirin isolou a mansão de Eientei do fluxo do tempo exterior.
+</p>
+
+<p><b>⛩️ O Refúgio em Gensokyo</b></p>
+
+<p>
+Após séculos de isolamento, a barreira de sua mansão acabou se conectando a Gensokyo:<br><br>
+Encontrou o lugar perfeito para viver sem as pressões de seu passado real<br>
+Decidiu abrir as portas de Eientei e interagir com os habitantes do local<br><br>
+Hoje, vive sua eternidade focada em jogos, lazer e em provocar sua rival Mokou.
+</p>
+
+<p>
+Ela prefere essa vida pacata no refúgio dos monstros do que qualquer luxo que a Capital Lunar pudesse oferecer.
+</p>
+    <h2>SPEALL CARDS</h2>
+
+    <video controls height="200px" src="./video.Spell/Spellcard61.mp4"></video>  
+    <video controls height="200px" src="./video.Spell/Spellcard62.mp4"></video>
+    <video controls height="200px" src="./video.Spell/Spellcard63.mp4"></video>
+    <video controls height="200px" src="./video.Spell/Spellcard64.mp4"></video>
+  </div>
+
+  
+  <div class="descricao">
+
+    <div class="nome">
+      <h1>Kaguya Houraisan</h1>
+    </div>
+
+    <div class="versao">
+    <button class="ativar" data-img="./img/img.personagem/img.Kaguya/Kaguyath8.png">th8</button>
+  </div>
+
+    <div class="content" id="Kaguya-img">
+      <img src="./img/img.personagem/img.Kaguya/Kaguyath8.png" alt="Kaguya Houraisan">
+    </div>
+
+    <div class="informacao">
+      <p>Espécie:Lunarian </p>
+      <p>Título:Princesa Eterna da Lua(Eternal Moon Princess)</p> 
+    </div>
+
+  </div>
+  <!--BUTÃO PARA MUDAR A IMAGEM-->
+<script>
+  const buttons = document.querySelectorAll('.versao button');
+
+  const imageDisplay = document.querySelector('#Cirno-img img');
+
+  buttons.forEach(button => {
+    button.addEventListener('click', () => {
+    
+      const newImgPath = button.getAttribute('data-img');
+      
+ 
+      imageDisplay.src = newImgPath;
+
+     
+      buttons.forEach(b => b.classList.remove('ativar'));
+      button.classList.add('ativar');
+    });
+  });
+</script>
+</div>
+</body>
+</html>

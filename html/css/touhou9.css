@@ -96,10 +96,24 @@ body {
 @media (max-width: 900px) {
   .page {
     flex-direction: column;
+    margin: 15px auto;
+    gap: 20px;
   }
 
   .descricao {
     position: static;
-    width: 100%;
+    max-width: 100%;
+    order: -1;
+  }
+}
+@media(min-width: 480px){
+  body{
+    font-size: 14px;
+  }
+  .page{
+    padding: 0 10px;
+  }
+  .texto{
+    padding: 15px;
   }
 }

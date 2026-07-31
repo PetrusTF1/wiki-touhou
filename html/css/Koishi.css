@@ -19,7 +19,6 @@ body {
   align-items: flex-start;
 }
 
-/* texto principal */
 .texto {
   flex: 2;
   line-height: 1.7;
@@ -30,7 +29,6 @@ body {
   padding: 20px;
 }
 
-/* card lateral */
 .descricao {
   flex: 1;
   width: 360px;
@@ -43,7 +41,6 @@ body {
   backdrop-filter: blur(4px);
 }
 
-/* nome */
 .nome {
   background: linear-gradient(90deg, #72f2c0, #ff9ecf);
   text-align: center;
@@ -57,7 +54,6 @@ body {
   letter-spacing: 1px;
 }
 
-/* botões */
 .versao {
   display: flex;
 }
@@ -82,7 +78,6 @@ body {
   background: #081f19;
 }
 
-/* imagem */
 .content {
   background: transparent;
   padding: 15px;
@@ -96,7 +91,6 @@ body {
   box-shadow: 0 0 15px rgba(114, 242, 192, 0.6);
 }
 
-/* infos */
 .informacao {
   background: rgba(30, 90, 70, 0.85);
   padding: 12px;
@@ -105,7 +99,6 @@ body {
   font-size: 14px;
 }
 
-/* títulos do texto */
 .texto h2 {
   color: #2e8f6a;
   border-left: 5px solid #2e8f6a;
@@ -113,19 +106,31 @@ body {
   margin-top: 25px;
 }
 
-/* destaques */
 .texto b {
   color: #ffe066;
 }
 
-/* responsivo */
 @media (max-width: 900px) {
   .page {
     flex-direction: column;
+    margin: 15px auto;
+    gap: 20px;
   }
 
   .descricao {
     position: static;
-    width: 100%;
+    max-width: 100%;
+    order: -1;
+  }
+}
+@media(min-width: 480px){
+  body{
+    font-size: 14px;
+  }
+  .page{
+    padding: 0 10px;
+  }
+  .texto{
+    padding: 15px;
   }
 }

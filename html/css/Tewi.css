@@ -1,0 +1,150 @@
+/* Base Body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url(../img/img.cenario/background37.png);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; 
+  background-color: #1a0f12;
+  color: #f5f5f5;
+  margin: 0;
+}
+
+/* Layout Principal */
+.page {
+  display: flex;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 0 20px;
+  align-items: flex-start;
+  box-sizing: border-box;
+}
+
+/* Bloco de Texto Principal */
+.texto {
+  flex: 2;
+  line-height: 1.6;
+  text-align: left;
+  background: #241519;
+  border: #ffb3c6 solid 2px;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 15px rgba(255, 179, 198, 0.2);
+}
+
+.texto h2 {
+  color: #8c584c;
+  border-left: 5px solid #ffb3c6;
+  padding-left: 10px;
+  margin-top: 25px;
+}
+
+.texto b {
+  color: #ffb3c6;
+}
+
+/* Card Lateral (Sidebar) */
+.descricao {
+  flex: 1;
+  width: 100%;
+  max-width: 360px;
+  background: #241519;
+  border-radius: 8px;
+  overflow: hidden; 
+  position: sticky;
+  top: 20px;
+  box-shadow: 0 0 25px rgba(140, 88, 76, 0.35);
+}
+
+/* Cabeçalho do Card */
+.nome {
+  background: linear-gradient(90deg, #ffb3c6, #8c584c);
+  text-align: center;
+  padding: 12px;
+}
+
+.nome h1 {
+  font-size: 16px;
+  margin: 0;
+  color: #ffffff;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+/* Abas / Botões de Versão */
+.versao {
+  display: flex;
+}
+
+.versao button {
+  flex: 1;
+  padding: 10px 8px;
+  background: #2f1c21;
+  border: none;
+  color: #ffb3c6;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.versao button:hover {
+  background: #3d242b;
+  color: #ffb703;
+}
+
+.versao button.ativar {
+  color: #8c584c;
+  border-bottom: 2px solid #8c584c;
+  background: #1f1216;
+}
+
+/* Conteúdo da Imagem */
+.content {
+  background: transparent;
+  padding: 15px;
+  text-align: center;
+}
+
+.content img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 6px;
+  box-shadow: 0 0 18px rgba(255, 179, 198, 0.35);
+}
+
+/* Rodapé de Informação */
+.informacao {
+  background: #1f1216;
+  padding: 12px 15px;
+  color: #ffb703;
+  border-top: 2px solid #8c584c;
+  font-size: 14px;
+}
+
+/* Responsividade */
+@media (max-width: 900px) {
+  .page {
+    flex-direction: column;
+    margin: 15px auto;
+    gap: 20px;
+  }
+
+  .descricao {
+    position: static;
+    max-width: 100%;
+    order: -1;
+  }
+}
+@media(min-width: 480px){
+  body{
+    font-size: 14px;
+  }
+  .page{
+    padding: 0 10px;
+  }
+  .texto{
+    padding: 15px;
+  }
+}

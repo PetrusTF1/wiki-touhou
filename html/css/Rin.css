@@ -1,0 +1,146 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url(../img/img.cenario/background31.png);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; 
+  background-color: #0b0f0d; /* Preto com um leve tom esverdeado fúnebre */
+  color: #f5f5f5;
+  margin: 0;
+}
+
+/* layout */
+.page {
+  display: flex;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 0 20px;
+  align-items: flex-start;
+}
+
+.texto {
+  flex: 2;
+  line-height: 1.6;
+  text-align: left;
+  background: #111614; /* Fundo escuro esverdeado (cor base do vestido) */
+  border: #00ff88 solid 2px; /* Verde brilhante das chamas espirituais */
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 15px rgba(0, 255, 136, 0.15);
+}
+
+/* CARD lateral */
+.descricao {
+  flex: 1;
+  width: 360px;
+  background: #111614; 
+  border-radius: 8px;
+  overflow: hidden; 
+  position: sticky;
+  top: 20px;
+  box-shadow: 0 0 25px rgba(255, 68, 0, 0.3); /* Glow laranja do cabelo/fogo infernal */
+}
+
+/* nome */
+.nome {
+  background: linear-gradient(90deg, #d34817, #ff6600); /* Laranja brilhante do cabelo da Orin */
+  text-align: center;
+  padding: 12px;
+}
+
+.nome h1 {
+  font-size: 16px;
+  margin: 0;
+  color: #ffffff;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+/* botões */
+.versao {
+  display: flex;
+}
+
+.versao button {
+  flex: 1;
+  padding: 8px;
+  background: #19221e; /* Tom esverdeado escuro */
+  border: none;
+  color: #00ff88; /* Texto verde chama */
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: bold;
+}
+
+.versao button:hover {
+  background: #24332c;
+  color: #ff6600; /* Muda para laranja no hover */
+}
+
+.versao button.ativar {
+  color: #ff6600; /* Ativado destaca em laranja */
+  border-bottom: 2px solid #ff6600;
+  background: #141b18;
+}
+
+/* imagem */
+.content {
+  background: transparent;
+  padding: 15px;
+  text-align: center;
+}
+
+.content img {
+  width: 100%;
+  display: block;
+  border-radius: 6px;
+  box-shadow: 0 0 18px rgba(0, 255, 136, 0.4); /* Glow verde ao redor do card de arte */
+}
+
+/* info */
+.informacao {
+  background: #141b18;
+  padding: 10px;
+  color: #ffaa33; /* Amarelo/Laranja claro para leitura */
+  border-top: 2px solid #ff6600;
+}
+
+/* títulos */
+.texto h2 {
+  color: #ff6600; /* Títulos em laranja fogoso */
+  border-left: 5px solid #00ff88; /* Detalhe lateral em verde espírito */
+  padding-left: 10px;
+  margin-top: 25px;
+}
+
+/* destaques */
+.texto b {
+  color: #00ff88; /* Negritos piscam em verde fantasmagórico */
+}
+
+/* responsivo */
+@media (max-width: 900px) {
+  .page {
+    flex-direction: column;
+    margin: 15px auto;
+    gap: 20px;
+  }
+
+  .descricao {
+    position: static;
+    max-width: 100%;
+    order: -1;
+  }
+}
+@media(min-width: 480px){
+  body{
+    font-size: 14px;
+  }
+  .page{
+    padding: 0 10px;
+  }
+  .texto{
+    padding: 15px;
+  }
+}

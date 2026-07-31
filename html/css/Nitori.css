@@ -1,0 +1,152 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url(../img/img.cenario/background33.png); /* Cenário do Rio Genbu */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; 
+  background-color: #0a192f; /* Azul escuro profundo */
+  color: #e6f1ff; /* Texto claro quase branco */
+  margin: 0;
+}
+
+/* Layout Principal */
+.page {
+  display: flex;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 0 20px;
+  align-items: flex-start;
+  box-sizing: border-box;
+}
+
+/* Bloco de Texto Principal (Estilo Manual de Engenharia/Especificações) */
+.texto {
+  flex: 2;
+  line-height: 1.6;
+  text-align: left;
+  background: #172a45; /* Azul metálico escuro */
+  border: #bdc3c7 solid 2px; /* Moldura de metal/aço escovado */
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 15px rgba(51, 168, 255, 0.2); /* Brilho aquático suave */
+}
+
+/* Títulos das seções */
+.texto h2 {
+  color: #33a8ff; /* Azul Kappa marcante */
+  border-left: 5px solid #2ecc71; /* Detalhe em verde kappa (mochila/pepino) */
+  padding-left: 10px;
+  margin-top: 25px;
+  letter-spacing: 0.5px;
+}
+
+/* Destaques no texto */
+.texto b {
+  color: #f1c40f; /* Palavras em negrito ganham o dourado das engrenagens */
+}
+
+/* Card Lateral (Ficha de Informações / Mochila de Ferramentas) */
+.descricao {
+  flex: 1;
+  width: 100%;
+  max-width: 360px;
+  background: #172a45; /* Azul metálico escuro */
+  border-radius: 8px;
+  overflow: hidden; 
+  position: sticky;
+  top: 20px;
+  box-shadow: 0 0 25px rgba(46, 204, 113, 0.4); /* Glow verde da camuflagem/mochila */
+}
+
+/* Nome da Personagem no Topo */
+.nome {
+  background: linear-gradient(90deg, #33a8ff, #1a5276); /* Azul água vivo para escuro */
+  text-align: center;
+  padding: 12px;
+}
+
+.nome h1 {
+  font-size: 16px;
+  margin: 0;
+  color: #ffffff;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
+}
+
+/* Abas / Botões de Versão (Modos da Máquina) */
+.versao {
+  display: flex;
+}
+
+.versao button {
+  flex: 1;
+  padding: 10px 8px;
+  background: #1f3a60; /* Azul intermediário */
+  border: none;
+  color: #bdc3c7; /* Texto cinza metálico */
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.versao button:hover {
+  background: #112233;
+  color: #f1c40f; /* Transição para o dourado no hover */
+}
+
+.versao button.ativar {
+  color: #33a8ff; /* Azul quando selecionado */
+  border-bottom: 2px solid #33a8ff;
+  background: #10223b; /* Fundo ativo */
+}
+
+/* Conteúdo da Imagem (Esquema Técnico / Foto do Experimento) */
+.content {
+  background: transparent;
+  padding: 15px;
+  text-align: center;
+}
+
+.content img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 6px;
+  box-shadow: 0 0 18px rgba(51, 168, 255, 0.3); /* Brilho azul de energia da água */
+}
+
+/* Rodapé de Informação (Notas de Desenvolvimento da Kappa) */
+.informacao {
+  background: #10223b; /* Fundo ativo */
+  padding: 12px 15px;
+  color: #f1c40f; /* Texto em ouro/engrenagem */
+  border-top: 2px solid #2ecc71; /* Divisória verde pepino */
+  font-size: 14px;
+}
+
+/* Responsividade */
+@media (max-width: 900px) {
+  .page {
+    flex-direction: column;
+    margin: 15px auto;
+    gap: 20px;
+  }
+
+  .descricao {
+    position: static;
+    max-width: 100%;
+    order: -1;
+  }
+}
+@media(min-width: 480px){
+  body{
+    font-size: 14px;
+  }
+  .page{
+    padding: 0 10px;
+  }
+  .texto{
+    padding: 15px;
+  }
+}

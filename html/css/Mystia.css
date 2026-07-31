@@ -1,0 +1,152 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url(../img/img.cenario/background38.png); /* Cenário da Estrada da Noite / Izakaya */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; 
+  background-color: #0d0614; /* Roxo escuro profundo da noite de Gensokyo */
+  color: #f5f0fa; /* Texto claro levemente rosado */
+  margin: 0;
+}
+
+/* Layout Principal */
+.page {
+  display: flex;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 0 20px;
+  align-items: flex-start;
+  box-sizing: border-box;
+}
+
+/* Bloco de Texto Principal (Estilo Menu de Izakaya / Letra de Música Noturna) */
+.texto {
+  flex: 2;
+  line-height: 1.6;
+  text-align: left;
+  background: #190e24; /* Roxo escuro místico */
+  border: #8e44ad solid 2px; /* Moldura roxa profunda */
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 15px rgba(232, 67, 147, 0.2); /* Brilho neon rosa suave (as asas/canto dela) */
+}
+
+/* Títulos das seções */
+.texto h2 {
+  color: #fd79a8; /* Rosa marcante da Mystia */
+  border-left: 5px solid #e17055; /* Detalhe em laranja/marrom quente (lembrando a barraca de lampreia) */
+  padding-left: 10px;
+  margin-top: 25px;
+  letter-spacing: 0.5px;
+}
+
+/* Destaques no texto */
+.texto b {
+  color: #ffeaa7; /* Palavras em negrito ganham o tom amarelado das lanternas da barraca */
+}
+
+/* Card Lateral (Ficha de Informações / Menu da Barraca) */
+.descricao {
+  flex: 1;
+  width: 100%;
+  max-width: 360px;
+  background: #190e24; /* Fundo roxo escuro */
+  border-radius: 8px;
+  overflow: hidden; 
+  position: sticky;
+  top: 20px;
+  box-shadow: 0 0 25px rgba(232, 67, 147, 0.4); /* Glow rosa do poder hipnotizante do canto */
+}
+
+/* Nome da Personagem no Topo */
+.nome {
+  background: linear-gradient(90deg, #e84393, #6c5ce7); /* Gradiente do rosa ao roxo noturno */
+  text-align: center;
+  padding: 12px;
+}
+
+.nome h1 {
+  font-size: 16px;
+  margin: 0;
+  color: #ffffff;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
+}
+
+/* Abas / Botões de Versão (Canções / Modos) */
+.versao {
+  display: flex;
+}
+
+.versao button {
+  flex: 1;
+  padding: 10px 8px;
+  background: #2d143c; /* Roxo intermediário */
+  border: none;
+  color: #b2bec3; /* Texto acinzentado */
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.versao button:hover {
+  background: #1e0b2a;
+  color: #ffeaa7; /* Transição para o dourado da lanterna no hover */
+}
+
+.versao button.ativar {
+  color: #fd79a8; /* Rosa ativo quando selecionado */
+  border-bottom: 2px solid #fd79a8;
+  background: #1a0826; /* Fundo ativo escuro */
+}
+
+/* Conteúdo da Imagem (Ilustração / Álbum de Música) */
+.content {
+  background: transparent;
+  padding: 15px;
+  text-align: center;
+}
+
+.content img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 6px;
+  box-shadow: 0 0 18px rgba(232, 67, 147, 0.3); /* Brilho aura youkai */
+}
+
+/* Rodapé de Informação (Notas da Estrada do Dragão de Janta) */
+.informacao {
+  background: #1a0826; /* Fundo escuro */
+  padding: 12px 15px;
+  color: #ffeaa7; /* Texto em tom de lanterna de saquê */
+  border-top: 2px solid #e17055; /* Divisória em tom de madeira/barraca */
+  font-size: 14px;
+}
+
+/* Responsividade */
+@media (max-width: 900px) {
+  .page {
+    flex-direction: column;
+    margin: 15px auto;
+    gap: 20px;
+  }
+
+  .descricao {
+    position: static;
+    max-width: 100%;
+    order: -1;
+  }
+}
+@media(min-width: 480px){
+  body{
+    font-size: 14px;
+  }
+  .page{
+    padding: 0 10px;
+  }
+  .texto{
+    padding: 15px;
+  }
+}
