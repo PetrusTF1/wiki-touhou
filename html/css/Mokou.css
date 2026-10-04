@@ -25,7 +25,7 @@ body {
   flex: 2;
   line-height: 1.6;
   text-align: left;
-  background: #240e0e; /* Vermelho queimado escuro místico */
+  background: #240e0ec2; /* Vermelho queimado escuro místico */
   border: #c0392b solid 2px; /* Moldura vermelha intensa (cor dos seus talismãs) */
   border-radius: 10px;
   padding: 20px;

@@ -3,7 +3,7 @@ body {
   background-image: url(../img/img.boss_th6/backgroundth6.png);
   background-size: cover;
   background-position: center;
-  background-attachment: fixed; 
+  background-attachment: fixed;
   background-color: #0a0000;
   color: #ffeaea;
   margin: 0;
@@ -24,7 +24,7 @@ body {
   flex: 2;
   line-height: 1.6;
   text-align: left;
-  background: #4a0000;
+  background: #4a0000b4;
   padding: 20px;
   border-radius: 12px;
   backdrop-filter: blur(6px);
@@ -72,7 +72,7 @@ body {
 /* botoes versão */
 .versao {
   display: flex;
-   flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .versao button {

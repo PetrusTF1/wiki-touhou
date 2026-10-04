@@ -1,4 +1,4 @@
-//SUGESTÕES DE NOME NA BARRA DE PESQUISA
+
 let sugestoes = [
     //Nomes de sugestões na barra de pesquisa
     "Alice Margatroid",
@@ -30,5 +30,5 @@ let sugestoes = [
     "Fujiwara no Mokou",
     "Keine Kamishirasawa ",
     "patchouli knowledge",
-    "Hong Meiling",
+    "Meiling",
 ];

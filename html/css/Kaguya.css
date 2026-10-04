@@ -1,6 +1,7 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   background-image: url(../img/img.cenario/background39.png);
+  background-size: cover;
   background-position: center;
   background-attachment: fixed; 
   background-color: #0b0314; 
@@ -23,7 +24,7 @@ body {
   flex: 2;
   line-height: 1.6;
   text-align: left;
-  background: #14051c;
+  background: #14051cad;
   border: #800020 solid 2px; 
   border-radius: 10px;
   padding: 20px;
@@ -57,7 +58,10 @@ body {
 
 .nome {
   background: linear-gradient(90deg, #800020, #4a0080);
+  text-align: center;
+  padding: 12px;
 }
+
 
 .nome h1 {
   font-size: 16px;

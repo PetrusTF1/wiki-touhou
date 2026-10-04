@@ -1,0 +1,168 @@
+/* ===================================================
+   PALETA DE CORES: Patchouli Knowledge (Grande Biblioteca)
+   =================================================== */
+:root {
+  --bg-deep: #130f1c;           /* Roxo noturno bem escuro */
+  --bg-card: rgba(28, 20, 39, 0.92); /* Card roxo profundo levemente translúcido */
+  --bg-button: #261a35;         /* Fundo dos botões inativos */
+  --bg-active: #342247;         /* Fundo da aba ativa/rodapé */
+  
+  --color-text: #e0d7ec;        /* Texto num tom lavanda claro suave */
+  --color-primary: #a872e4;     /* Roxo mágico vibrante */
+  --color-secondary: #e6b800;   /* Dourado/Amarelo dos detalhes dos laços */
+  --color-accent: #c44776;      /* Rosa/Magenta dos laços de Patchouli */
+  --color-glow: rgba(168, 114, 228, 0.35); /* Brilho mágico de fundo */
+}
+
+/* Base Body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url(../img/img.cenario/background43.png);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; 
+  background-color: var(--bg-deep);
+  color: var(--color-text);
+  margin: 0;
+}
+
+/* Layout Principal */
+.page {
+  display: flex;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 0 20px;
+  align-items: flex-start;
+  box-sizing: border-box;
+}
+
+/* Bloco de Texto Principal */
+.texto {
+  flex: 2;
+  line-height: 1.6;
+  text-align: left;
+  background: var(--bg-card);
+  border: var(--color-primary) solid 2px;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 15px var(--color-glow);
+}
+
+.texto h2 {
+  color: var(--color-secondary);
+  border-left: 5px solid var(--color-accent);
+  padding-left: 10px;
+  margin-top: 25px;
+}
+
+.texto b {
+  color: var(--color-primary);
+}
+
+/* Card Lateral (Sidebar) */
+.descricao {
+  flex: 1;
+  width: 100%;
+  max-width: 360px;
+  background: var(--bg-card);
+  border: 1px solid var(--color-primary);
+  border-radius: 8px;
+  overflow: hidden; 
+  position: sticky;
+  top: 20px;
+  box-shadow: 0 0 25px rgba(196, 71, 118, 0.3);
+}
+
+/* Cabeçalho do Card */
+.nome {
+  background: linear-gradient(90deg, var(--color-accent), var(--color-primary));
+  text-align: center;
+  padding: 12px;
+}
+
+.nome h1 {
+  font-size: 16px;
+  margin: 0;
+  color: #ffffff;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+/* Abas / Botões de Versão */
+.versao {
+  display: flex;
+}
+
+.versao button {
+  flex: 1;
+  padding: 10px 8px;
+  background: var(--bg-button);
+  border: none;
+  color: var(--color-primary);
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.versao button:hover {
+  background: #3e2857;
+  color: var(--color-secondary);
+}
+
+.versao button.ativar {
+  color: var(--color-secondary);
+  border-bottom: 2px solid var(--color-secondary);
+  background: var(--bg-active);
+}
+
+/* Conteúdo da Imagem */
+.content {
+  background: transparent;
+  padding: 15px;
+  text-align: center;
+}
+
+.content img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 6px;
+  box-shadow: 0 0 18px var(--color-glow);
+}
+
+/* Rodapé de Informação */
+.informacao {
+  background: var(--bg-active);
+  padding: 12px 15px;
+  color: var(--color-text);
+  border-top: 2px solid var(--color-accent);
+  font-size: 14px;
+}
+
+/* Responsividade */
+@media (max-width: 900px) {
+  .page {
+    flex-direction: column;
+    margin: 15px auto;
+    gap: 20px;
+  }
+
+  .descricao {
+    position: static;
+    max-width: 100%;
+    order: -1;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+  .page {
+    padding: 0 10px;
+  }
+  .texto {
+    padding: 15px;
+  }
+}

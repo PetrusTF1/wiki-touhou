@@ -23,7 +23,7 @@ body {
   flex: 2;
   line-height: 1.6;
   text-align: left;
-  background: #151f32; 
+  background: #151f32b2; 
   border: #8b0000 solid 2px; 
   padding: 20px;
   box-shadow: 0 0 15px rgba(139, 0, 0, 0.35);}
@@ -85,14 +85,14 @@ body {
   color: #d4af37;}
 
 .versao button.ativar {
-  color: #4a90e2; 
+  color: #4a90e2;
   border-bottom: 2px solid #4a90e2;
   background: #1d2b44;
 }
 .content, #Keine-img {
-  width: 100%;      
+  width: 100%;
   max-width: 500px;
-  height: auto;     
+  height: auto;
   display: block;
 }
 

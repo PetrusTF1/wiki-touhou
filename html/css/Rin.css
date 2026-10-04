@@ -23,7 +23,7 @@ body {
   flex: 2;
   line-height: 1.6;
   text-align: left;
-  background: #111614; /* Fundo escuro esverdeado (cor base do vestido) */
+  background: #111614a8; /* Fundo escuro esverdeado (cor base do vestido) */
   border: #00ff88 solid 2px; /* Verde brilhante das chamas espirituais */
   border-radius: 10px;
   padding: 20px;

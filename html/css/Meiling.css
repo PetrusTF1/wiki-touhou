@@ -1,0 +1,171 @@
+/* ===================================================
+   PALETA E VARIÁVEIS DA HONG MEILING
+   =================================================== */
+:root {
+  --bg-deep: #0f1d15;           /* Fundo verde bem escuro */
+  --bg-card: rgba(22, 43, 31, 0.95); /* Fundo dos cards (verde floresta escuro) */
+  --bg-button: #162b1f;         /* Fundo dos botões inativos */
+  --bg-active: #213d2d;         /* Fundo da aba ativa / rodapé */
+  
+  --color-text: #e0ece4;        /* Texto principal (claro) */
+  --color-jade: #2e8b57;        /* Verde Dragão / Vestido */
+  --color-scarlet: #c0392b;     /* Vermelho Escarlate / Cabelo */
+  --color-gold: #f1c40f;        /* Dourado / Estrela do Chapéu */
+  --color-subtext: #a8c3b2;     /* Subtítulos / Textos secundários */
+}
+
+/* Base Body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url(../img/img.cenario/background44.png);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-color: var(--bg-deep);
+  color: var(--color-text);
+  margin: 0;
+}
+
+/* Layout Principal */
+.page {
+  display: flex;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 0 20px;
+  align-items: flex-start;
+  box-sizing: border-box;
+}
+
+/* Bloco de Texto Principal */
+.texto {
+  flex: 2;
+  line-height: 1.6;
+  text-align: left;
+  background: var(--bg-card);
+  border: var(--color-gold) solid 2px;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 15px rgba(241, 196, 15, 0.25);
+}
+
+.texto h2 {
+  color: var(--color-gold);
+  border-left: 5px solid var(--color-scarlet);
+  padding-left: 10px;
+  margin-top: 25px;
+}
+
+.texto b {
+  color: var(--color-gold);
+}
+
+/* Card Lateral (Sidebar) */
+.descricao {
+  flex: 1;
+  width: 100%;
+  max-width: 360px;
+  background: var(--bg-card);
+  border-radius: 8px;
+  overflow: hidden;
+  position: sticky;
+  top: 20px;
+  border: 1px solid var(--color-jade);
+  box-shadow: 0 0 25px rgba(192, 57, 43, 0.4); /* Glow Vermelho Escarlate */
+}
+
+/* Cabeçalho do Card */
+.nome {
+  background: linear-gradient(90deg, var(--color-scarlet), #8e2a20);
+  text-align: center;
+  padding: 12px;
+  border-bottom: 2px solid var(--color-gold);
+}
+
+.nome h1 {
+  font-size: 16px;
+  margin: 0;
+  color: #ffffff;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
+}
+
+/* Abas / Botões de Versão */
+.versao {
+  display: flex;
+}
+
+.versao button {
+  flex: 1;
+  padding: 10px 8px;
+  background: var(--bg-button);
+  border: none;
+  border-bottom: 2px solid transparent;
+  color: var(--color-gold);
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.versao button:hover {
+  background: #284433;
+  color: #ffffff;
+}
+
+.versao button.ativar {
+  color: #ffffff;
+  border-bottom: 2px solid var(--color-gold);
+  background: var(--color-scarlet);
+}
+
+/* Conteúdo da Imagem */
+.content {
+  background: transparent;
+  padding: 15px;
+  text-align: center;
+}
+
+.content img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 6px;
+  border: 1px solid var(--color-gold);
+  box-shadow: 0 0 18px rgba(241, 196, 15, 0.35);
+}
+
+/* Rodapé de Informação */
+.informacao {
+  background: var(--bg-active);
+  padding: 12px 15px;
+  color: var(--color-subtext);
+  border-top: 2px solid var(--color-jade);
+  font-size: 14px;
+}
+
+/* Responsividade */
+@media (max-width: 900px) {
+  .page {
+    flex-direction: column;
+    margin: 15px auto;
+    gap: 20px;
+  }
+
+  .descricao {
+    position: static;
+    max-width: 100%;
+    order: -1;
+  }
+}
+
+@media(min-width: 480px){
+  body {
+    font-size: 14px;
+  }
+  .page {
+    padding: 0 10px;
+  }
+  .texto {
+    padding: 15px;
+  }
+}

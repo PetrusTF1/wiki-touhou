@@ -25,7 +25,7 @@ body {
   flex: 2;
   line-height: 1.6;
   text-align: left;
-  background: #172a45; /* Azul metálico escuro */
+  background: #172a45af; /* Azul metálico escuro */
   border: #bdc3c7 solid 2px; /* Moldura de metal/aço escovado */
   border-radius: 10px;
   padding: 20px;
