@@ -3,13 +3,13 @@ body {
   background-image: url(../img/img.cenario/cenario12.png);
   background-size: cover;
   background-position: center;
-  background-attachment: fixed; 
+  background-attachment: fixed;
   background-color: #0a0000;
   color: #f0d800;
   margin: 0;
 }
 
-/* layout geral */
+
 .page {
   display: flex;
   gap: 30px;
@@ -19,20 +19,20 @@ body {
   align-items: flex-start;
 }
 
-/* texto principal */
+
 .texto {
   flex: 2;
   line-height: 1.6;
   text-align: left;
-  background: #998219;
+  background: #b8980b;
   padding: 20px;
   border-radius: 12px;
   backdrop-filter: blur(6px);
-  box-shadow: 0 0 20px rgba(116, 11, 11, 0.3);;
+  box-shadow: 0 0 20px rgba(116, 11, 11, 0.3);
+  ;
 }
 
 
-/* caixa lateral */
 .descricao {
   flex: 1;
   width: 360px;
@@ -41,10 +41,10 @@ body {
   overflow: hidden;
   position: sticky;
   top: 20px;
-  box-shadow: 0 0 25px rgba(0,0,0,0.8);
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.8);
 }
 
-/* nome topo */
+
 .nome {
   background: #000000ce;
   text-align: center;
@@ -73,7 +73,7 @@ body {
 .audio-2 h3 {
   margin-bottom: 10px;
   font-size: 20px;
-  color: #cead1b;
+  color: #cead1bcb;
   text-align: center;
   font-weight: 600;
 }
@@ -134,14 +134,17 @@ body {
     order: -1;
   }
 }
-@media(min-width: 480px){
-  body{
+
+@media(min-width: 480px) {
+  body {
     font-size: 14px;
   }
-  .page{
+
+  .page {
     padding: 0 10px;
   }
-  .texto{
+
+  .texto {
     padding: 15px;
   }
 }

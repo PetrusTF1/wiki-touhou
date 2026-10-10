@@ -2,16 +2,25 @@
    PALETA E VARIÁVEIS DA HONG MEILING
    =================================================== */
 :root {
-  --bg-deep: #0f1d15;           /* Fundo verde bem escuro */
-  --bg-card: rgba(22, 43, 31, 0.95); /* Fundo dos cards (verde floresta escuro) */
-  --bg-button: #162b1f;         /* Fundo dos botões inativos */
-  --bg-active: #213d2d;         /* Fundo da aba ativa / rodapé */
-  
-  --color-text: #e0ece4;        /* Texto principal (claro) */
-  --color-jade: #2e8b57;        /* Verde Dragão / Vestido */
-  --color-scarlet: #c0392b;     /* Vermelho Escarlate / Cabelo */
-  --color-gold: #f1c40f;        /* Dourado / Estrela do Chapéu */
-  --color-subtext: #a8c3b2;     /* Subtítulos / Textos secundários */
+  --bg-deep: #0f1d15;
+  /* Fundo verde bem escuro */
+  --bg-card: rgba(22, 43, 31, 0.95);
+  /* Fundo dos cards (verde floresta escuro) */
+  --bg-button: #162b1f;
+  /* Fundo dos botões inativos */
+  --bg-active: #213d2d;
+  /* Fundo da aba ativa / rodapé */
+
+  --color-text: #e0ece4;
+  /* Texto principal (claro) */
+  --color-jade: #2e8b57;
+  /* Verde Dragão / Vestido */
+  --color-scarlet: #c0392b;
+  /* Vermelho Escarlate / Cabelo */
+  --color-gold: #f1c40f;
+  /* Dourado / Estrela do Chapéu */
+  --color-subtext: #a8c3b2;
+  /* Subtítulos / Textos secundários */
 }
 
 /* Base Body */
@@ -71,7 +80,8 @@ body {
   position: sticky;
   top: 20px;
   border: 1px solid var(--color-jade);
-  box-shadow: 0 0 25px rgba(192, 57, 43, 0.4); /* Glow Vermelho Escarlate */
+  box-shadow: 0 0 25px rgba(192, 57, 43, 0.4);
+  /* Glow Vermelho Escarlate */
 }
 
 /* Cabeçalho do Card */
@@ -158,13 +168,15 @@ body {
   }
 }
 
-@media(min-width: 480px){
+@media(min-width: 480px) {
   body {
     font-size: 14px;
   }
+
   .page {
     padding: 0 10px;
   }
+
   .texto {
     padding: 15px;
   }
